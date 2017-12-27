@@ -15,5 +15,6 @@ deeplearning4j 教程
 
 参考资料：
 
+ 1. 
  1. http://www.jianshu.com/p/1d80023119cc
  2. http://neuralnetworksanddeeplearning.com/chap4.html
