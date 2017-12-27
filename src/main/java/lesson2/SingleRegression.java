@@ -3,8 +3,6 @@ package lesson2;
 import org.deeplearning4j.datasets.iterator.impl.ListDataSetIterator;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
-import org.deeplearning4j.nn.conf.Updater;
-import org.deeplearning4j.nn.conf.layers.DenseLayer;
 import org.deeplearning4j.nn.conf.layers.OutputLayer;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
@@ -14,11 +12,9 @@ import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.factory.Nd4j;
-import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.learning.config.Sgd;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -28,13 +24,22 @@ import java.util.Random;
  * 用于拟合 y = 0.5x + 0.1
  */
 public class SingleRegression {
-    private static final int seed = 123;
+    //随机数种子，用于结果复现
+    private static final int seed = 12345;
+    //对于每个miniBatch的迭代次数
+    private static final int iterations = 10;
+    //epoch数量(全部数据的训练次数)
+    private static final int nEpochs = 20;
+    //一共生成多少样本点
     private static final int nSamples = 1000;
+    //Batch size: i.e., each epoch has nSamples/batchSize parameter updates
     private static final int batchSize = 100;
+    //网络模型学习率
     private static final double learningRate = 0.01;
+    //随机数据生成的范围
     private static int MIN_RANGE = 0;
     private static int MAX_RANGE = 3;
-    private static int nEpochs = 20;
+
     private static final Random rng = new Random(seed);
 
     public static void main(String[] args) {
@@ -44,7 +49,7 @@ public class SingleRegression {
 
         MultiLayerNetwork net = new MultiLayerNetwork(new NeuralNetConfiguration.Builder()
                 .seed(seed)
-                .iterations(1)
+                .iterations(iterations)
                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
                 .weightInit(WeightInit.XAVIER)
                 .updater(new Sgd(learningRate))
