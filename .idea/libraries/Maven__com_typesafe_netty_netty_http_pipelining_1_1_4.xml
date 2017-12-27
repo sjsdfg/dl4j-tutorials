@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.typesafe.netty:netty-http-pipelining:1.1.4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/netty/netty-http-pipelining/1.1.4/netty-http-pipelining-1.1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/netty/netty-http-pipelining/1.1.4/netty-http-pipelining-1.1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/netty/netty-http-pipelining/1.1.4/netty-http-pipelining-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
