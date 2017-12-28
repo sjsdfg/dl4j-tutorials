@@ -30,5 +30,20 @@ deeplearning4j 教程
  1. http://www.jianshu.com/p/1d80023119cc
  2. http://neuralnetworksanddeeplearning.com/chap4.html
 
+## lesson3 简易数据分类
+
+ 1. [ETL用户指南][2]
+ 2. [MNIST基础教程，包含一些分类知识][3]
+
+## lesson4 Minst手写数字分类
+
+## lesson5 模型保存与读取
+
+## lesson5 Minst手写数字模型改进
+ 
+ 
+
 
   [1]: https://deeplearning4j.org/cn/neuralnet-overview
+  [2]: https://deeplearning4j.org/cn/etl-userguide
+  [3]: https://deeplearning4j.org/cn/mnist-for-beginners
