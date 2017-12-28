@@ -91,20 +91,19 @@ public class RegressionMathFunctions {
     /** Returns the network configuration, 2 hidden DenseLayers of size 50.
      */
     private static MultiLayerConfiguration getDeepDenseLayerNetworkConfiguration() {
-        final int numHiddenNodes = 50;
+        final int numHiddenNodes = 1000;
         return new NeuralNetConfiguration.Builder()
                 .seed(seed)
                 .iterations(iterations)
                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
-                .learningRate(learningRate)
                 .weightInit(WeightInit.XAVIER)
                 .updater(new Nesterovs(learningRate, 0.9))
                 .list()
                 .layer(0, new DenseLayer.Builder().nIn(numInputs).nOut(numHiddenNodes)
-                        .activation(Activation.TANH).build())
-                .layer(1, new DenseLayer.Builder().nIn(numHiddenNodes).nOut(numHiddenNodes)
-                        .activation(Activation.TANH).build())
-                .layer(2, new OutputLayer.Builder(LossFunctions.LossFunction.MSE)
+                        .activation(Activation.SIGMOID).build())
+//                .layer(1, new DenseLayer.Builder().nIn(numHiddenNodes).nOut(numHiddenNodes)
+//                        .activation(Activation.TANH).build())
+                .layer(1, new OutputLayer.Builder(LossFunctions.LossFunction.MSE)
                         .activation(Activation.IDENTITY)
                         .nIn(numHiddenNodes).nOut(numOutputs).build())
                 .pretrain(false).backprop(true).build();

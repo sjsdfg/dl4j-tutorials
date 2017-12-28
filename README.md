@@ -22,7 +22,7 @@ deeplearning4j 教程
  1. Deep Learning A Practitioner’s Approach
  2. https://nd4j.org/userguide
 
-## lesson2 简易一元线性回归
+## lesson2 简易线性回归
 
 参考资料：
 
