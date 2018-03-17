@@ -15,6 +15,11 @@ deeplearning4j 教程
 </mirror> 
 ```
 
+## dl4j概览
+
+1. [dl4j快速索引：网络层，功能和类][6]
+2. [例子概览][7]
+
 ## lesson1 nd4j基础操作
 
 参考资料：
@@ -58,3 +63,5 @@ deeplearning4j 教程
   [3]: https://deeplearning4j.org/cn/etl-userguide
   [4]: https://deeplearning4j.org/cn/mnist-for-beginners
   [5]: http://blog.csdn.net/u011669700/article/details/79113789
+  [6]: https://deeplearning4j.org/quickref
+  [7]: https://deeplearning4j.org/examples-tour
