@@ -3,7 +3,6 @@ package lesson6;
 import org.deeplearning4j.datasets.iterator.impl.MnistDataSetIterator;
 import org.deeplearning4j.eval.Evaluation;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
-import org.deeplearning4j.nn.conf.LearningRatePolicy;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.conf.Updater;
@@ -19,12 +18,10 @@ import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
+import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by agibsonccc on 9/16/15.
@@ -51,13 +48,6 @@ public class LenetMnistExample {
             Construct the neural network
          */
         log.info("Build model....");
-
-        // learning rate schedule in the form of <Iteration #, Learning Rate>
-        Map<Integer, Double> lrSchedule = new HashMap<>();
-        lrSchedule.put(0, 0.01);
-        lrSchedule.put(1000, 0.005);
-        lrSchedule.put(3000, 0.001);
-
         MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
                 .seed(seed)
                 .iterations(iterations) // Training iterations as above
@@ -66,24 +56,10 @@ public class LenetMnistExample {
                     Uncomment the following for learning decay and bias
                  */
                 .learningRate(.01)//.biasLearningRate(0.02)
-                /*
-                    Alternatively, you can use a learning rate schedule.
-
-                    NOTE: this LR schedule defined here overrides the rate set in .learningRate(). Also,
-                    if you're using the Transfer Learning API, this same override will carry over to
-                    your new model configuration.
-                */
-                .learningRateDecayPolicy(LearningRatePolicy.Schedule)
-                .learningRateSchedule(lrSchedule)
-                /*
-                    Below is an example of using inverse policy rate decay for learning rate
-                */
-                //.learningRateDecayPolicy(LearningRatePolicy.Inverse)
-                //.lrPolicyDecayRate(0.001)
-                //.lrPolicyPower(0.75)
+                //.learningRateDecayPolicy(LearningRatePolicy.Inverse).lrPolicyDecayRate(0.001).lrPolicyPower(0.75)
                 .weightInit(WeightInit.XAVIER)
                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
-                .updater(Updater.NESTEROVS).momentum(0.9)
+                .updater(new Nesterovs())
                 .list()
                 .layer(0, new ConvolutionLayer.Builder(5, 5)
                         //nIn and nOut specify depth. nIn here is the nChannels and nOut is the number of filters to be applied
@@ -133,8 +109,10 @@ public class LenetMnistExample {
         model.init();
 
 
+        long startTime = System.currentTimeMillis();
+
         log.info("Train model....");
-        model.setListeners(new ScoreIterationListener(1));
+        model.setListeners(new ScoreIterationListener(100));
         for( int i=0; i<nEpochs; i++ ) {
             model.fit(mnistTrain);
             log.info("*** Completed epoch {} ***", i);
@@ -150,6 +128,10 @@ public class LenetMnistExample {
             log.info(eval.stats());
             mnistTest.reset();
         }
+
+        long endTime = System.currentTimeMillis();
+
+        System.out.println("total time:" + (endTime - startTime));
         log.info("****************Example finished********************");
     }
 }
