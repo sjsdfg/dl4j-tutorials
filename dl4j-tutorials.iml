@@ -5,7 +5,7 @@
       <configuration />
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -157,6 +157,7 @@
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-jackson:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-base64:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: commons-net:commons-net:3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-zoo:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui_2.11:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-play_2.11:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.play:play-java_2.11:2.4.8" level="project" />
