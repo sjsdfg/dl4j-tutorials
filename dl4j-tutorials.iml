@@ -11,64 +11,90 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native-platform:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas-platform:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:android-arm:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:android-x86:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-x86:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-x86_64:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-armhf:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-ppc64le:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:macosx-x86_64:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:windows-x86:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:windows-x86_64:0.2.19-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:1.3.3" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:android-arm:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:android-x86:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:linux-x86_64:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:macosx-x86_64:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:windows-x86_64:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:linux-ppc64le:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-core:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:nearestneighbor-core:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-modelimport:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5-platform:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-x86:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-x86_64:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-ppc64le:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:macosx-x86_64:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:windows-x86:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:windows-x86_64:1.10.0-patch1-1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native-platform:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas-platform:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:android-arm:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:android-arm64:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:android-x86:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:android-x86_64:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:ios-arm64:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:ios-x86_64:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-x86:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-x86_64:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-armhf:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:linux-ppc64le:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:macosx-x86_64:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:windows-x86:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:openblas:windows-x86_64:0.2.20-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:mkl-platform:2018.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:mkl:2018.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:mkl:linux-x86:2018.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:mkl:linux-x86_64:2018.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:mkl:macosx-x86_64:2018.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:mkl:windows-x86:2018.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:mkl:windows-x86_64:2018.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacpp:1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:android-arm:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:android-arm64:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:android-x86:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:android-x86_64:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:ios-arm64:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:ios-x86_64:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:linux-x86_64:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:macosx-x86_64:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:windows-x86_64:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native:linux-ppc64le:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-core:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-tsne:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-datasets:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-datavec-iterators:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:nearestneighbor-core:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-modelimport:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5-platform:1.10.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:1.10.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-x86:1.10.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-x86_64:1.10.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-ppc64le:1.10.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:macosx-x86_64:1.10.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:windows-x86:1.10.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:windows-x86_64:1.10.1-1.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.12" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-nn:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-common:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: com.github.stephenc.findbugs:findbugs-annotations:1.3.9-1" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-nn:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-utility-iterators:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-util:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-common:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-math3:3.4.1" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.8" level="project" />
     <orderEntry type="library" name="Maven: org.tukaani:xz:1.5" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-api:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-buffer:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-context:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-api:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: com.vlkan:flatbuffers:1.2.0-3f79e055" level="project" />
+    <orderEntry type="library" name="Maven: com.github.os72:protobuf-java-shaded-351:0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.github.os72:protobuf-java-util-shaded-351:0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.7" level="project" />
+    <orderEntry type="library" name="Maven: uk.com.robust-it:cloning:1.9.3" level="project" />
+    <orderEntry type="library" name="Maven: org.objenesis:objenesis:2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-buffer:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-context:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: net.ericaro:neoitertools:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.reflections:reflections:0.9.10" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.19.0-GA" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:annotations:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:jackson:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:jackson:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.12" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.16" level="project" />
-    <orderEntry type="library" name="Maven: org.datavec:datavec-api:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.datavec:datavec-api:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.23" level="project" />
     <orderEntry type="library" name="Maven: com.clearspring.analytics:stream:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: it.unimi.dsi:fastutil:6.5.7" level="project" />
     <orderEntry type="library" name="Maven: net.sf.opencsv:opencsv:2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.datavec:datavec-data-image:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: com.tdunning:t-digest:3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.datavec:datavec-data-image:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: com.github.jai-imageio:jai-imageio-core:1.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-jpeg:3.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-core:3.1.1" level="project" />
@@ -79,64 +105,71 @@
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-tiff:3.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-psd:3.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-bmp:3.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco:javacv:1.3.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:ffmpeg:3.2.1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:flycapture:2.9.3.43-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:libdc1394:2.2.4-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:libfreenect:0.5.3-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:libfreenect2:0.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:librealsense:1.9.6-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:videoinput:0.200-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:artoolkitplus:2.3.1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:flandmark:1.07-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv-platform:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:android-arm:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:android-x86:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-x86:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-x86_64:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-armhf:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-ppc64le:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:macosx-x86_64:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:windows-x86:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:windows-x86_64:3.2.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica-platform:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:android-arm:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:android-x86:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-x86:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-x86_64:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-armhf:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-ppc64le:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:macosx-x86_64:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:windows-x86:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:windows-x86_64:1.73-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-components:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco:javacv:1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:ffmpeg:3.4.2-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:flycapture:2.11.3.121-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:libdc1394:2.2.5-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:libfreenect:0.5.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:libfreenect2:0.2.0-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:librealsense:1.12.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:videoinput:0.200-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:artoolkitplus:2.3.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:flandmark:1.07-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv-platform:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:android-arm:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:android-arm64:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:android-x86:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:android-x86_64:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:ios-arm64:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:ios-x86_64:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-x86:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-x86_64:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-armhf:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:linux-ppc64le:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:macosx-x86_64:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:windows-x86:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:opencv:windows-x86_64:3.4.1-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica-platform:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:android-arm:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:android-arm64:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:android-x86:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:android-x86_64:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-x86:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-x86_64:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-armhf:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:linux-ppc64le:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:macosx-x86_64:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:windows-x86:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:leptonica:windows-x86_64:1.75.3-1.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-components:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-nlp:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native-api:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-nlp:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-native-api:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-jackson:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-base64:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.threadly:threadly:4.10.0" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-jackson:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.nd4j:nd4j-base64:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: commons-net:commons-net:3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui_2.11:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-play_2.11:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-java_2.11:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui_2.11:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-play_2.11:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-java_2.11:2.4.8" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play_2.11:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:build-link:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-exceptions:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-iteratees_2.11:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play_2.11:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:build-link:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-exceptions:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-iteratees_2.11:2.4.8" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe:config:1.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-json_2.11:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-functional_2.11:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-datacommons_2.11:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-netty-utils:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-json_2.11:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-functional_2.11:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-datacommons_2.11:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-netty-utils:2.4.8" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.play:twirl-api_2.11:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-xml_2.11:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.12" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.12" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.1.3" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.1.3" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.11:2.3.13" level="project" />
@@ -160,8 +193,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: net.jodah:typetools:0.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:8.0.21" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-netty-server_2.11:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-server_2.11:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-netty-server_2.11:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-server_2.11:2.4.8" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.10.4.Final" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.netty:netty-http-pipelining:1.1.4" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-contrib_2.11:2.3.13" level="project" />
@@ -189,7 +222,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.4.4" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-cluster_2.11:2.3.13" level="project" />
     <orderEntry type="library" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-model:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-model:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: org.agrona:Agrona:0.5.4" level="project" />
     <orderEntry type="library" name="Maven: org.mapdb:mapdb:3.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.0.7" level="project" />
@@ -201,9 +234,9 @@
     <orderEntry type="library" name="Maven: net.jpountz.lz4:lz4:1.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.mapdb:elsa:3.0.0-M5" level="project" />
     <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.15.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-resources:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-resources:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:19.0" level="project" />
-    <orderEntry type="library" name="Maven: org.datavec:datavec-data-codec:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.datavec:datavec-data-codec:1.0.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: org.jcodec:jcodec:0.1.5" level="project" />
     <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.13" level="project" />
     <orderEntry type="library" name="Maven: jfree:jcommon:1.0.16" level="project" />
@@ -211,21 +244,21 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui_2.10:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-play_2.10:0.9.1" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-java_2.10:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play_2.10:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-iteratees_2.10:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-json_2.10:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-functional_2.10:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-datacommons_2.10:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui_2.10:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-play_2.10:1.0.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-java_2.10:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play_2.10:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-iteratees_2.10:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-json_2.10:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-functional_2.10:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-datacommons_2.10:2.4.8" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.play:twirl-api_2.10:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.10:2.3.13" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-slf4j_2.10:2.3.13" level="project" />
     <orderEntry type="library" name="Maven: org.scala-stm:scala-stm_2.10:0.7" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-java8-compat_2.10:0.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-netty-server_2.10:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: com.typesafe.play:play-server_2.10:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-netty-server_2.10:2.4.8" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe.play:play-server_2.10:2.4.8" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-contrib_2.10:2.3.13" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-remote_2.10:2.3.13" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-persistence-experimental_2.10:2.3.13" level="project" />
