@@ -1,4 +1,4 @@
-package util;
+package lesson3;
 
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.ChartUtilities;

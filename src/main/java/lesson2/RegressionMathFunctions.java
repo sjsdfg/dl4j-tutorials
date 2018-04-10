@@ -94,7 +94,6 @@ public class RegressionMathFunctions {
         final int numHiddenNodes = 1000;
         return new NeuralNetConfiguration.Builder()
                 .seed(seed)
-                .iterations(iterations)
                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
                 .weightInit(WeightInit.XAVIER)
                 .updater(new Nesterovs(learningRate, 0.9))

@@ -34,7 +34,6 @@ public class LenetMnistExample {
         int outputNum = 10; // The number of possible outcomes
         int batchSize = 64; // Test batch size
         int nEpochs = 1; // Number of training epochs
-        int iterations = 1; // Number of training iterations
         int seed = 123; //
 
         /*
@@ -50,16 +49,14 @@ public class LenetMnistExample {
         log.info("Build model....");
         MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
                 .seed(seed)
-                .iterations(iterations) // Training iterations as above
-                .regularization(true).l2(0.0005)
+                .l2(0.0005)
                 /*
                     Uncomment the following for learning decay and bias
                  */
-                .learningRate(.01)//.biasLearningRate(0.02)
                 //.learningRateDecayPolicy(LearningRatePolicy.Inverse).lrPolicyDecayRate(0.001).lrPolicyPower(0.75)
                 .weightInit(WeightInit.XAVIER)
                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
-                .updater(new Nesterovs())
+                .updater(new Nesterovs(0.01, 0.9))
                 .list()
                 .layer(0, new ConvolutionLayer.Builder(5, 5)
                         //nIn and nOut specify depth. nIn here is the nChannels and nOut is the number of filters to be applied
