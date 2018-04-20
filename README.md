@@ -60,6 +60,12 @@ deeplearning4j 教程
 
 参考资料：
  1. https://blog.csdn.net/u011669700/article/details/79886619
+ 
+## tensorflow 导入tf模型
+
+参考资料：
+ 1. https://blog.csdn.net/u011669700/article/details/80025161
+
 
  
  
