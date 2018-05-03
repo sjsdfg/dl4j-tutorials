@@ -71,7 +71,7 @@ deeplearning4j 教程
 ## 自定义网络层实现GRU
 
 参考资料：
- 1. https://github.com/sjsdfg/pan-dl4j
+ 1. https://github.com/Gerry-Pan/pan-dl4j
 
 根据GRU前向公式推导反向公式，并在dl4j中实现。
 
