@@ -29,7 +29,7 @@ deeplearning4j 教程
 
  1. [Deep Learning A Practitioner’s Approach][1]
  2. https://nd4j.org/userguide
- 3. [nd4j方法快速索引] [8]
+ 3. [nd4j方法快速索引][8]
 
 ## lesson2 简易线性回归
 
