@@ -58,6 +58,13 @@ deeplearning4j 教程
 
 参考资料
 
+## lesson7 RNN循环神经网络
+
+参考资料
+ 1. 理解LSTM网络：https://www.jianshu.com/p/9dc9f41f0b29
+ 2. 循环网络和LSTM教程：https://deeplearning4j.org/cn/recurrentnetwork
+ 3. DL4J中的循环网络：https://deeplearning4j.org/cn/usingrnns
+
 ## ObjectDetection 目标检测
 
 参考资料：
