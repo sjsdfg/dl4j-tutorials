@@ -29,7 +29,7 @@ deeplearning4j 教程
 
  1. [Deep Learning A Practitioner’s Approach][1]
  2. https://nd4j.org/userguide
- 3. [nd4j方法快速索引] [8]
+ 3. [nd4j方法快速索引][8]
 
 ## lesson2 简易线性回归
 
@@ -78,7 +78,7 @@ deeplearning4j 教程
 ## 自定义网络层实现GRU
 
 参考资料：
- 1. https://github.com/sjsdfg/pan-dl4j
+ 1. https://github.com/Gerry-Pan/pan-dl4j
 
 根据GRU前向公式推导反向公式，并在dl4j中实现。
 
