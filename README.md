@@ -82,6 +82,11 @@ deeplearning4j 教程
 
 根据GRU前向公式推导反向公式，并在dl4j中实现。
 
+## 整合DL4J训练模型与Web工程
+参考资料：
+ 1. 博文地址：https://my.oschina.net/u/1778239/blog/1648854
+ 2. 源码地址：https://gitee.com/lxkm/dl4j-demo/tree/master/digitalrecognition
+
 
  
  
