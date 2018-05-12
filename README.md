@@ -56,7 +56,8 @@ deeplearning4j 教程
 
 ## lesson6 Minst手写数字模型改进-CNN
 
-参考资料
+参考资料：
+ 1. [关于深度学习之CNN经典论文原文(1950~2018)简介] [https://blog.csdn.net/qq_41185868/article/details/79995732]
 
 ## lesson7 RNN循环神经网络
 
