@@ -47,6 +47,10 @@ deeplearning4j 教程
 
 ## lesson4 Minst手写数字分类
 
+参考资料：
+
+ 1. [MINST数据集](http://yann.lecun.com/exdb/mnist/)
+
 
 ## lesson5 模型保存与读取
 
