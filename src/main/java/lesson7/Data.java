@@ -23,7 +23,7 @@ public class Data {
     public Data() {
     }
 
-    public Data(double[] datas, int label) {
+    public Data(double[] datas, double label) {
         this.datas = datas;
         this.label = label;
     }
