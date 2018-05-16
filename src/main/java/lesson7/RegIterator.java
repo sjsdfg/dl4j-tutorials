@@ -50,8 +50,6 @@ public class RegIterator implements DataSetIterator {
         resetDataRecord();
     }
 
-
-
     private void resetDataRecord() {
         dataRecord.clear();
         int total = dataList.size() / exampleLength;
@@ -67,7 +65,7 @@ public class RegIterator implements DataSetIterator {
 
     @Override
     public DataSet next(int num) {
-        if (dataRecord.size() < 0) {
+        if (dataRecord.size() <= 0) {
             throw new NoSuchElementException("List元素已经用完");
         }
 

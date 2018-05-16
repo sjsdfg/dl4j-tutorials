@@ -8,39 +8,24 @@ import java.util.Arrays;
  * Created by Joe on 2017/9/15.
  */
 public class Data {
-    /**
-     * 发生时间
-     */
-    private LocalDateTime occurTime;
+
     /**
      * 测点数据
      */
     private double[] datas;
     /**
-     * 标记 0-正常 1-异常
+     * 标签
+     * 可以用于分类 0-正常 1-异常
+     * 也可以用于回归 label即为数值
      */
-    private int label;
+    private double label;
 
     public Data() {
     }
 
-    public Data(LocalDateTime occurTime, double[] datas) {
-        this.occurTime = occurTime;
-        this.datas = datas;
-    }
-
-    public Data(LocalDateTime occurTime, double[] datas, int label) {
-        this.occurTime = occurTime;
+    public Data(double[] datas, int label) {
         this.datas = datas;
         this.label = label;
-    }
-
-    public LocalDateTime getOccurTime() {
-        return occurTime;
-    }
-
-    public void setOccurTime(LocalDateTime occurTime) {
-        this.occurTime = occurTime;
     }
 
     public double[] getDatas() {
@@ -51,18 +36,19 @@ public class Data {
         this.datas = datas;
     }
 
-    public int getLabel() {
+    public double getLabel() {
         return label;
     }
 
-    public void setLabel(int label) {
+    public void setLabel(double label) {
         this.label = label;
     }
 
     @Override
     public String toString() {
-        return occurTime +
-                "," + Arrays.toString(datas).replace("[", "").replace("]", "").replace(" ", "") +
-                "," + label;
+        return "Data{" +
+                "datas=" + Arrays.toString(datas) +
+                ", label=" + label +
+                '}';
     }
 }
