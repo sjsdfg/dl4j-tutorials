@@ -64,7 +64,7 @@ deeplearning4j 教程
 
 参考资料：
  1. [关于深度学习之CNN经典论文原文(1950~2018)简介][9]
- 2. [使用Cuda 9.1和 Cudnn7.1 加速模型训练] (https://www.jianshu.com/p/8a7533c2c79a)
+ 2. [使用Cuda 9.1和 Cudnn7.1 加速模型训练](https://www.jianshu.com/p/8a7533c2c79a)
 
 ## lesson7 RNN循环神经网络
 
