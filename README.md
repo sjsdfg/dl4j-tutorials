@@ -22,7 +22,7 @@ deeplearning4j 教程
 1. [dl4j快速索引：网络层，功能和类][6]
 2. [例子概览][7]
 3. [dl4j 神经网络评估](https://deeplearning4j.org/evaluation)
-4. [dl4j 发布日志](https://github.com/deeplearning4j/deeplearning4j-docs/blob/releasenotes_100a/releasenotes.md)
+4. [dl4j 版本发布日志](https://github.com/deeplearning4j/deeplearning4j-docs/blob/releasenotes_100a/releasenotes.md)
 
 
 ## lesson1 nd4j基础操作
