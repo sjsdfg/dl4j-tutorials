@@ -23,6 +23,7 @@ deeplearning4j 教程
 2. [例子概览][7]
 3. [dl4j 神经网络评估](https://deeplearning4j.org/evaluation)
 4. [dl4j 版本发布日志](https://github.com/deeplearning4j/deeplearning4j-docs/blob/releasenotes_100a/releasenotes.md)
+5. [Java api文档](https://deeplearning4j.org/doc/)
 
 
 ## lesson1 nd4j基础操作
