@@ -26,8 +26,10 @@ public class Nd4jGetAndSet {
             修改指定索引的值
          */
         System.out.println("修改数组下标为0, 3的值");
+        //scalar 标量
         nd.putScalar(0, 3, 100);
 
+        System.out.println(nd);
         /*
             使用索引迭代器遍历ndarray，使用c order
          */

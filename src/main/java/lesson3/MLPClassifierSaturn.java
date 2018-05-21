@@ -22,6 +22,7 @@ import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 
 import java.io.File;
+import java.util.Arrays;
 
 /**
  * "Saturn" Data Classification Example
@@ -60,6 +61,8 @@ public class MLPClassifierSaturn {
         RecordReader rrTest = new CSVRecordReader();
         rrTest.initialize(new FileSplit(new File(filenameTest)));
         DataSetIterator testIter = new RecordReaderDataSetIterator(rrTest,batchSize,0,2);
+
+        System.out.println(Arrays.toString(testIter.next().getFeatures().shape()));
 
         //log.info("Build model....");
         MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
