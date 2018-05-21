@@ -24,6 +24,7 @@ deeplearning4j 教程
 3. [dl4j 神经网络评估](https://deeplearning4j.org/evaluation)
 4. [dl4j 版本发布日志](https://github.com/deeplearning4j/deeplearning4j-docs/blob/releasenotes_100a/releasenotes.md)
 5. [Java api文档](https://deeplearning4j.org/doc/)
+6. [skymind 官方博客](https://blog.skymind.ai/)
 
 
 ## lesson1 nd4j基础操作
