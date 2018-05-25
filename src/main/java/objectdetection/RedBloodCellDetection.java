@@ -149,14 +149,14 @@ public class RedBloodCellDetection {
         } else {
             log.info("Build model...");
 
-            ComputationGraph pretrained = (ComputationGraph) new TinyYOLO().initPretrained();
+            ComputationGraph pretrained = (ComputationGraph)TinyYOLO.builder().build().initPretrained();
             INDArray priors = Nd4j.create(priorBoxes);
 
             FineTuneConfiguration fineTuneConf = new FineTuneConfiguration.Builder().seed(seed)
                 .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT).gradientNormalization(GradientNormalization.RenormalizeL2PerLayer)
                 .gradientNormalizationThreshold(1.0).updater(new Adam.Builder().learningRate(learningRate).build())
                 .updater(new Nesterovs.Builder().learningRate(learningRate).momentum(lrMomentum).build()).activation(Activation.IDENTITY)
-                .trainingWorkspaceMode(WorkspaceMode.SEPARATE).inferenceWorkspaceMode(WorkspaceMode.SEPARATE).build();
+                .trainingWorkspaceMode(WorkspaceMode.ENABLED).inferenceWorkspaceMode(WorkspaceMode.ENABLED).build();
 
             model = new TransferLearning.GraphBuilder(pretrained).fineTuneConfiguration(fineTuneConf).removeVertexKeepConnections("conv2d_9")
                 .addLayer("convolution2d_9",

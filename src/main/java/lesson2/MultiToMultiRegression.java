@@ -8,6 +8,8 @@ import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
 import org.nd4j.linalg.activations.Activation;
+import org.nd4j.linalg.api.buffer.DataBuffer;
+import org.nd4j.linalg.api.buffer.util.DataTypeUtil;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.factory.Nd4j;
@@ -26,13 +28,13 @@ public class MultiToMultiRegression {
     //对于每个miniBatch的迭代次数
     private static final int iterations = 10;
     //epoch数量(全部数据的训练次数)
-    private static final int nEpochs = 2000;
+    private static final int nEpochs = 200;
 
     private static final int numHiddenNodes = 128;
     //一共生成多少样本点
     private static final int nSamples = 1000;
     //Batch size: i.e., each epoch has nSamples/batchSize parameter updates
-    private static final int batchSize = 100;
+    private static final int batchSize = 1000;
     //网络模型学习率
     private static final double learningRate = 0.01;
     //随机数据生成的范围
@@ -42,6 +44,12 @@ public class MultiToMultiRegression {
     private static final Random rng = new Random(seed);
 
     public static void main(String[] args) {
+        DataTypeUtil.setDTypeForContext(DataBuffer.Type.DOUBLE);
+
+        Nd4j.setDataType(DataBuffer.Type.DOUBLE);
+
+        System.out.println(Nd4j.dataType());
+
         //Create the network
         int numInput = 2;
         int numOutputs = 2;
