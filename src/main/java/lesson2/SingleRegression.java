@@ -79,7 +79,7 @@ public class SingleRegression {
                 .weightInit(WeightInit.XAVIER)
                 /**
                  * 优化算法
-                 * tf,keras -> optimeizer
+                 * tf,keras -> optimizer
                  * 迈步子
                  *
                  * 学习率迈步子的大小
