@@ -3,7 +3,6 @@ package lesson3;
 import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 import org.datavec.api.split.FileSplit;
-import org.datavec.api.util.ClassPathResource;
 import org.deeplearning4j.datasets.datavec.RecordReaderDataSetIterator;
 import org.deeplearning4j.eval.Evaluation;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
@@ -20,6 +19,8 @@ import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.factory.Nd4j;
 import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
+import org.nd4j.linalg.io.ClassPathResource;
+
 
 import java.io.File;
 
@@ -46,14 +47,36 @@ public class MLPClassifierLinear {
         int numOutputs = 2;
         int numHiddenNodes = 20;
 
+        /**
+         * 首先获取了本文的绝对路径
+         */
         final String filenameTrain  = new ClassPathResource("/classification/linear_data_train.csv").getFile().getPath();
         final String filenameTest  = new ClassPathResource("/classification/linear_data_eval.csv").getFile().getPath();
 
         //Load the training data:
+        // 创建记录读取器
         RecordReader rr = new CSVRecordReader();
 //        rr.initialize(new FileSplit(new File("src/main/resources/classification/linear_data_train.csv")));
+        // 初始化对应的文件分割
         rr.initialize(new FileSplit(new File(filenameTrain)));
+        /**
+         * 在dl4j中，分类标签是使用 one-hot
+         * 0 -> [1, 0]
+         * 1 -> [0, 1]
+         *
+         * 假如有三类
+         * 0 -> [1, 0, 0]
+         * 1 -> [0, 1, 0]
+         * 2 -> [0, 0, 1]
+         */
         DataSetIterator trainIter = new RecordReaderDataSetIterator(rr,batchSize,0,2);
+
+        //用于查看数据的组织方式
+//        DataSet dataSet = trainIter.next();
+//        INDArray label = dataSet.getLabels();
+//        System.out.println(label);
+
+
 
         //Load the test/evaluation data:
         RecordReader rrTest = new CSVRecordReader();
@@ -64,32 +87,48 @@ public class MLPClassifierLinear {
                 .seed(seed)
                 .updater(new Nesterovs(learningRate, 0.9))
                 .list()
-                .layer(0, new DenseLayer.Builder().nIn(numInputs).nOut(numHiddenNodes)
+//                .layer(0, new DenseLayer.Builder().nIn(numInputs).nOut(numHiddenNodes)
+//                        .weightInit(WeightInit.XAVIER)
+//                        .activation(Activation.RELU)
+//                        .build())
+                .layer(0, new OutputLayer.Builder(LossFunction.NEGATIVELOGLIKELIHOOD)
                         .weightInit(WeightInit.XAVIER)
-                        .activation(Activation.RELU)
-                        .build())
-                .layer(1, new OutputLayer.Builder(LossFunction.NEGATIVELOGLIKELIHOOD)
-                        .weightInit(WeightInit.XAVIER)
+                        /**
+                         * 最后一层的激活函数决定了我们是回归任务还是分类任务
+                         * 回归-> Activation.IDENTITY
+                         * 分类任务->Activation.SOFTMAX
+                         */
                         .activation(Activation.SOFTMAX).weightInit(WeightInit.XAVIER)
-                        .nIn(numHiddenNodes).nOut(numOutputs).build())
+                        .nIn(numInputs).nOut(numOutputs).build())
                 .pretrain(false).backprop(true).build();
 
 
         MultiLayerNetwork model = new MultiLayerNetwork(conf);
+        /**
+         * 为了初始化我们模型的权重和偏置
+         */
         model.init();
         model.setListeners(new ScoreIterationListener(10));  //Print score every 10 parameter updates
 
 
+        // 数据的训练
         for ( int n = 0; n < nEpochs; n++) {
             model.fit( trainIter );
         }
 
         System.out.println("Evaluate model....");
+
+        // 首先需要指定分类的类别墅
         Evaluation eval = new Evaluation(numOutputs);
+
+        // 遍历我们的测试机
         while(testIter.hasNext()){
             DataSet t = testIter.next();
             INDArray features = t.getFeatureMatrix();
             INDArray lables = t.getLabels();
+            /**
+             * 在测试集时，我们 trian-> false
+             */
             INDArray predicted = model.output(features,false);
 
             eval.eval(lables, predicted);
