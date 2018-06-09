@@ -62,6 +62,7 @@ deeplearning4j 教程
 参考资料：
 
  1. [HDFS模型保存][5]
+ 2. [SparkDl4jMultiLayer模型存储](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/markdown/deeplearning4j%E7%9B%B8%E5%85%B3/SparkNetwork%E6%A8%A1%E5%9E%8B%E5%AD%98%E5%82%A8.md)
 
 ## lesson6 Minst手写数字模型改进-CNN
 
