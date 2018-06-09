@@ -2,10 +2,12 @@ package lesson6;
 
 import org.deeplearning4j.datasets.iterator.impl.MnistDataSetIterator;
 import org.deeplearning4j.eval.Evaluation;
+import org.deeplearning4j.nn.conf.ConvolutionMode;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.conf.inputs.InputType;
 import org.deeplearning4j.nn.conf.layers.*;
+import org.deeplearning4j.nn.conf.preprocessor.CnnToFeedForwardPreProcessor;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
@@ -60,7 +62,16 @@ public class LenetMnistExample {
                         //nIn and nOut specify depth. nIn here is the nChannels and nOut is the number of filters to be applied
                         .nIn(nChannels)
                         .stride(1, 1)
+                        /**
+                         * nOut 等价于 我们在训练的时候需要使用多少个 filter
+                         */
                         .nOut(20)
+                        /**
+                         * padding 对于个人用户来说，在使用中我们不需要自己去特别计算padding
+                         * SAME -> ConvolutionMode.Same
+                         * VALID -> ConvolutionMode.Truncate
+                         */
+                        .convolutionMode(ConvolutionMode.Same)
                         .activation(Activation.IDENTITY)
                         .build())
                 .layer(1, new SubsamplingLayer.Builder(PoolingType.MAX)
@@ -85,6 +96,7 @@ public class LenetMnistExample {
                         .build())
                 .setInputType(InputType.convolutionalFlat(28,28,1)) //See note below
                 .backprop(true).pretrain(false).build();
+
 
         /*
         Regarding the .setInputType(InputType.convolutionalFlat(28,28,1)) line: This does a few things.
