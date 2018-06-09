@@ -38,7 +38,7 @@ public class SaveLoadComputationGraph {
 
 
         //Save the model
-        File locationToSave = new File("MyComputationGraph.zip");       //Where to save the network. Note: the file is in .zip format - can be opened externally
+        File locationToSave = new File("model/MyComputationGraph.zip");       //Where to save the network. Note: the file is in .zip format - can be opened externally
         boolean saveUpdater = true;                                             //Updater: i.e., the state for Momentum, RMSProp, Adagrad etc. Save this if you want to train your network more in the future
         ModelSerializer.writeModel(net, locationToSave, saveUpdater);
 
