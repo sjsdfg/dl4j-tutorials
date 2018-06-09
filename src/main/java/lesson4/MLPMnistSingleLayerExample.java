@@ -62,6 +62,7 @@ public class MLPMnistSingleLayerExample {
                 .l2(1e-4)
                 .list()
                 .layer(0, new DenseLayer.Builder() //create the first, input layer with xavier initialization
+                        // batchSize, features
                         .nIn(numRows * numColumns)
                         .nOut(1000)
                         .activation(Activation.RELU)
@@ -91,7 +92,7 @@ public class MLPMnistSingleLayerExample {
         Evaluation eval = new Evaluation(outputNum); //create an evaluation object with 10 possible classes
         while(mnistTest.hasNext()){
             DataSet next = mnistTest.next();
-            INDArray output = model.output(next.getFeatureMatrix()); //get the networks prediction
+            INDArray output = model.output(next.getFeatureMatrix(), false); //get the networks prediction
             eval.eval(next.getLabels(), output); //check the prediction against the true class
         }
 

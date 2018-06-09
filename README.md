@@ -54,6 +54,7 @@ deeplearning4j 教程
 参考资料：
 
  1. [MINST数据集](http://yann.lecun.com/exdb/mnist/)
+ 2. [神经网络学习的可视化、监测及调试方法](https://deeplearning4j.org/cn/visualization)
 
 
 ## lesson5 模型保存与读取
