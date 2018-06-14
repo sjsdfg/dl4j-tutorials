@@ -98,6 +98,9 @@ public class UsingModelToPredict {
 
     /**
      * 将单通道的 INDArray 保存为灰度图
+     *
+     * There's also NativeImageLoader.asMat(INDArray) and we can then use OpenCV to save it as an image file.
+     *
      * @param array 输入
      * @return 灰度图转化
      */
