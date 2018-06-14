@@ -10,11 +10,9 @@ import org.nd4j.linalg.factory.Nd4j;
 import org.nd4j.linalg.io.ClassPathResource;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.lang.annotation.Native;
 import java.util.Arrays;
 
 /**
@@ -28,30 +26,71 @@ public class UsingModelToPredict {
     private static String modelPath = "model/LeNetModel.zip";
 
     public static void main(String[] args) throws IOException {
+        /**
+         * 首先我们需要创建一个数据读取器
+         *
+         * channel为1的时候，如果我们输入的一个彩色图，会自动的进行图像的灰度处理
+         */
         NativeImageLoader imageLoader = new NativeImageLoader(height, width, channel);
 
+        /**
+         * 指定我们的图片位置
+         */
         File imgFile = new ClassPathResource("/mnist/4.jpg").getFile();
 
+        /**
+         * 使用ImageLoader把图像转化为 INDArray
+         */
         INDArray imgNdarray = imageLoader.asMatrix(imgFile);
 
 //        DataNormalization scaler = new ImagePreProcessingScaler(0, 1);
 //        scaler.transform(imgNdarray);
-        System.out.println(imgNdarray);
 
+//        imgNdarray = imgNdarray.reshape(1, channel * height * width);
+
+        /**
+         * 打印查看数据
+         */
+//        System.out.println(imgNdarray);
+
+        /**
+         * 打印查看我们的数据的shape
+         * 我们数据的相撞
+         */
         System.out.println(Arrays.toString(imgNdarray.shape()));
 
+        /**
+         * 把灰度化之后的图片进行保存
+         */
         ImageIO.write(imageFromINDArray(imgNdarray), "jpg", new File("model/test.jpg"));
 
 
+        /**
+         * 反序列化我们的模型
+         * LeNet -> 卷积神经网络 -> 输入数据要求为4个维度 -> [batch, channel, height, width]
+         * SingleLayer -> 全连接神经网络 -> 输入的数据要求的维度为2 -> [batch, features] -> [batch, channel * height * width]
+         */
         MultiLayerNetwork network = ModelSerializer.restoreMultiLayerNetwork(modelPath, false);
 
+        /**
+         * 分类使用one-hot编码
+         * 输出为概率
+         * 概率最大的位置，为我们所分类的类型
+         */
         INDArray output = network.output(imgNdarray);
-//
-//        System.out.println(output);
-//        System.out.println(Nd4j.getBlasWrapper().iamax(output));
-//
-//        int[] results = network.predict(imgNdarray);
-//        System.out.println(Arrays.toString(results));
+
+        System.out.println(output);
+        /**
+         * 获取最大值的索引
+         */
+        System.out.println(Nd4j.getBlasWrapper().iamax(output));
+
+        /**
+         * output->只能输出模型的最后一层的经过激活函数的值 -> softmax
+         * predict -> 其实就是一个 output 的封装 -> 只能用于分类
+         */
+        int[] results = network.predict(imgNdarray);
+        System.out.println(Arrays.toString(results));
 
 //        System.out.println(imageLoader.asMatrix(new File("model/test.jpg")));
     }
