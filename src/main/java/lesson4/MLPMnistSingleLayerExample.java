@@ -9,6 +9,7 @@ import org.deeplearning4j.nn.conf.layers.OutputLayer;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
+import org.deeplearning4j.util.ModelSerializer;
 import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
@@ -17,6 +18,9 @@ import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
 
 
 /**A Simple Multi Layered Perceptron (MLP) applied to digit classification for
@@ -94,6 +98,12 @@ public class MLPMnistSingleLayerExample {
             DataSet next = mnistTest.next();
             INDArray output = model.output(next.getFeatureMatrix(), false); //get the networks prediction
             eval.eval(next.getLabels(), output); //check the prediction against the true class
+        }
+
+        try {
+            ModelSerializer.writeModel(model, new File("model/SingleLayerModel.zip"), false);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         log.info(eval.stats());

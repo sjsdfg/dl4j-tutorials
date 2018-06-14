@@ -13,7 +13,7 @@
         <!-- Change the nd4j.backend property to nd4j-cuda-9.1-platform or nd4j-cuda-8.0-platform to use CUDA GPUs -->
         <!-- CPU使用  nd4j-native-platform -->
         <!-- GPU使用  nd4j-cuda-9.1-platform-->
-        <nd4j.backend>nd4j-cuda-9.1-platform</nd4j.backend>
+        <nd4j.backend>nd4j-native-platform</nd4j.backend>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <shadedClassifier>bin</shadedClassifier>
 
@@ -76,11 +76,11 @@
             <version>${nd4j.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.deeplearning4j</groupId>
-            <artifactId>deeplearning4j-cuda-9.1</artifactId>
-            <version>${dl4j.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.deeplearning4j</groupId>-->
+            <!--<artifactId>deeplearning4j-cuda-9.1</artifactId>-->
+            <!--<version>${dl4j.version}</version>-->
+        <!--</dependency>-->
 
         <!-- Core DL4J functionality -->
         <dependency>
