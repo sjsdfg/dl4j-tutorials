@@ -17,6 +17,11 @@ deeplearning4j 教程
 </mirror> 
 ```
 
+### 使用maven把jar包导出为外部
+```
+mvn dependency:copy-dependencies -DoutputDirectory=target/lib
+```
+
 ## dl4j概览
 
 1. [dl4j快速索引：网络层，功能和类][6]
