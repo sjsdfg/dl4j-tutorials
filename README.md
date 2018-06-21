@@ -77,7 +77,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  4. [Deeplearning4j-使用Cuda 9.1和 Cudnn7.1 加速模型训练](https://www.jianshu.com/p/8a7533c2c79a)
  5. [在Deeplearning4j中使用cuDNN](https://blog.csdn.net/u011669700/article/details/79028821)
  6. [Using Deeplearning4j with cuDNN](https://deeplearning4j.org/cudnn)
- 7. deep learning for computer vision with python(3 本): https://pan.baidu.com/s/17UMo76p75piTcArqu0wXJQ 密码：vr0r
+ 7. [deep learning for computer vision with python(3 本)](https://pan.baidu.com/s/17UMo76p75piTcArqu0wXJQ) 密码：vr0r
 
 ## lesson7 RNN循环神经网络
 
