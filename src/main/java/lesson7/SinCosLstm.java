@@ -57,6 +57,7 @@ public class SinCosLstm {
             }
             trainIter.reset();
         }
+
     }
 
     public static List<Data> readFile(String filePath) {
