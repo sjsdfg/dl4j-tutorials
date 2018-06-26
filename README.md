@@ -36,7 +36,8 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 参考资料：
 
- 1. [Deep Learning A Practitioner’s Approach][1]
+ 1. [一天搞懂深度学习](https://pan.baidu.com/s/1FW8zqzE4rK7pCOsC46dhIQ) 
+ 1. [Deep Learning A Practitioner’s Approach](https://pan.baidu.com/s/1C1s2xMuDYJBd3kCB8bxlxA)
  2. https://nd4j.org/userguide
  3. [nd4j方法快速索引][8]
 
