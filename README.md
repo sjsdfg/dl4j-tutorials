@@ -120,8 +120,6 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  
  
 
-
-  [1]: http://download.csdn.net/download/u011669700/10026286
   [2]: https://deeplearning4j.org/cn/neuralnet-overview
   [3]: https://deeplearning4j.org/cn/etl-userguide
   [4]: https://deeplearning4j.org/cn/mnist-for-beginners
