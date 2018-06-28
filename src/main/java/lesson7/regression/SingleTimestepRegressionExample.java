@@ -55,6 +55,9 @@ public class SingleTimestepRegressionExample {
         int miniBatchSize = 32;
 
         // ----- Load the training data -----
+        /*
+            skipNumLine -> 是为了可以使得用户指定跳过的行数->一般用于表头
+         */
         SequenceRecordReader trainReader = new CSVSequenceRecordReader(0, ";");
         trainReader.initialize(new NumberedFileInputSplit(baseDir.getAbsolutePath() + "/passengers_train_%d.csv", 0, 0));
 
