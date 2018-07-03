@@ -5,6 +5,8 @@ import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 import org.datavec.api.split.FileSplit;
 import org.deeplearning4j.datasets.datavec.RecordReaderDataSetIterator;
 import org.deeplearning4j.eval.Evaluation;
+import org.deeplearning4j.eval.ROC;
+import org.deeplearning4j.evaluation.EvaluationTools;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.conf.layers.DenseLayer;
@@ -84,11 +86,24 @@ public class MLPClassifierSaturn {
         model.init();
         model.setListeners(new ScoreIterationListener(10));    //Print score every 10 parameter updates
 
+        ROC roc = new ROC(0);
         for ( int n = 0; n < nEpochs; n++) {
             model.fit( trainIter );
+
+            trainIter.reset();
+            while (trainIter.hasNext()) {
+                DataSet t = trainIter.next();
+                INDArray features = t.getFeatureMatrix();
+                INDArray lables = t.getLabels();
+                INDArray predicted = model.output(features,false);
+                roc.eval(lables, predicted);
+                System.out.println(roc.calculateAUC());
+            }
+            trainIter.reset();
         }
 
         System.out.println("Evaluate model....");
+
         Evaluation eval = new Evaluation(numOutputs);
         while(testIter.hasNext()){
             DataSet t = testIter.next();
@@ -99,7 +114,7 @@ public class MLPClassifierSaturn {
             eval.eval(lables, predicted);
 
         }
-
+        EvaluationTools.exportRocChartsToHtmlFile(roc, new File("model/test.html"));
 
         System.out.println(eval.stats());
         //------------------------------------------------------------------------------------

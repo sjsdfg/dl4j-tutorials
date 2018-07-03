@@ -3,6 +3,7 @@
 deeplearning4j 教程
 
 视频教程列表：[Deeplearning4j - 入门视频](https://blog.csdn.net/u011669700/article/details/80629357)
+
 哔哩哔哩直达地址：https://space.bilibili.com/327018681/#/
 
 交流群： 289058486
