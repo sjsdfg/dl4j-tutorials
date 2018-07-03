@@ -86,7 +86,6 @@ public class MLPClassifierSaturn {
         model.init();
         model.setListeners(new ScoreIterationListener(10));    //Print score every 10 parameter updates
 
-        ROC roc = new ROC(0);
         for ( int n = 0; n < nEpochs; n++) {
             model.fit( trainIter );
 
@@ -96,8 +95,7 @@ public class MLPClassifierSaturn {
                 INDArray features = t.getFeatureMatrix();
                 INDArray lables = t.getLabels();
                 INDArray predicted = model.output(features,false);
-                roc.eval(lables, predicted);
-                System.out.println(roc.calculateAUC());
+
             }
             trainIter.reset();
         }
@@ -105,6 +103,8 @@ public class MLPClassifierSaturn {
         System.out.println("Evaluate model....");
 
         Evaluation eval = new Evaluation(numOutputs);
+        ROC roc = new ROC(1000);
+
         while(testIter.hasNext()){
             DataSet t = testIter.next();
             INDArray features = t.getFeatureMatrix();
@@ -112,7 +112,8 @@ public class MLPClassifierSaturn {
             INDArray predicted = model.output(features,false);
 
             eval.eval(lables, predicted);
-
+            roc.eval(lables, predicted);
+            System.out.println(roc.calculateAUC());
         }
         EvaluationTools.exportRocChartsToHtmlFile(roc, new File("model/test.html"));
 
