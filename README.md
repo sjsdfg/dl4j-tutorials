@@ -94,6 +94,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  1. 理解LSTM网络：https://www.jianshu.com/p/9dc9f41f0b29
  2. 循环网络和LSTM教程：https://deeplearning4j.org/cn/recurrentnetwork
  3. DL4J中的循环网络：https://deeplearning4j.org/cn/usingrnns
+ 4. [DeepLearning4j: LSTM Network Example](https://deeplearning4j.org/programmingguide/05_lstm)
 
 ## ObjectDetection 目标检测
 
