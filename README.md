@@ -29,6 +29,8 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 ```
 mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 ```
+[deeplearning4j-1.0.0beta离线jar包百度云](https://pan.baidu.com/s/1pxuEmzypSvlguCftsMaZ3g)
+
 
 ## dl4j概览
 
