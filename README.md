@@ -16,6 +16,9 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 
 ## 注意
 因为使用的maven管理项目，所以第一次使用的时候更改maven配置。更改仓库地址为国内的阿里云
+
+- [Deeplearning4j入门（零）- maven环境配置 - 寒沧](https://www.bilibili.com/video/av25768162)
+
 ```
 <mirror>
 	<id>nexus-aliyun</id>
@@ -29,7 +32,8 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 ```
 mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 ```
-[deeplearning4j-1.0.0beta离线jar包---百度云](https://pan.baidu.com/s/1pxuEmzypSvlguCftsMaZ3g)
+
+- [deeplearning4j-1.0.0beta离线jar包---百度云](https://pan.baidu.com/s/1pxuEmzypSvlguCftsMaZ3g)
 
 
 ## dl4j概览
