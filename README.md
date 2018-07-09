@@ -39,7 +39,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 ## dl4j概览
 
 1. [dl4j快速索引：网络层，功能和类][6]
-2. [例子概览][7]
+2. [dl4j-example 概览][7]
 3. [dl4j 神经网络评估](https://deeplearning4j.org/evaluation)
 4. [dl4j 版本发布日志](https://github.com/deeplearning4j/deeplearning4j-docs/blob/releasenotes_100a/releasenotes.md)
 5. [Java api文档](https://deeplearning4j.org/doc/)
