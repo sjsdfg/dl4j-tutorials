@@ -106,6 +106,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 参考资料：
  1. https://blog.csdn.net/u011669700/article/details/79886619
+ 2. [Java构建汽车无人驾驶：汽车目标检测](https://blog.csdn.net/u011669700/article/details/79432195)
  
 ## tensorflow 导入tf模型
 
