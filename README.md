@@ -44,6 +44,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 4. [dl4j 版本发布日志](https://github.com/deeplearning4j/deeplearning4j-docs/blob/releasenotes_100a/releasenotes.md)
 5. [Java api文档](https://deeplearning4j.org/doc/)
 6. [skymind 官方博客](https://blog.skymind.ai/)
+7. [Quickstart with Deeplearning4J](http://www.dubs.tech/guides/quickstart-with-dl4j/)
 
 
 ## lesson1 nd4j基础操作
