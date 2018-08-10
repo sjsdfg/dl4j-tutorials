@@ -38,7 +38,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 ## dl4j概览
 
-1. [dl4j快速索引：网络层，功能和类](Deeplearning4j Quick Reference: Layers, Functionality and Classes)
+1. [dl4j快速索引：网络层，功能和类](https://github.com/deeplearning4j/deeplearning4j-docs/blob/gh-pages/quickref.md)
 2. [dl4j-example 概览](https://github.com/deeplearning4j/deeplearning4j-docs/blob/gh-pages/examples-tour.md)
 3. [dl4j 神经网络评估](https://deeplearning4j.org/docs/v1.0.0-beta2/deeplearning4j-nn-evaluation)
 4. [dl4j 版本发布日志](https://github.com/deeplearning4j/deeplearning4j-docs/blob/releasenotes_100a/releasenotes.md)
@@ -46,6 +46,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 6. [skymind 官方博客](https://blog.skymind.ai/)
 7. [Quickstart with Deeplearning4J](http://www.dubs.tech/guides/quickstart-with-dl4j/)
 8. [旧版本官网github](https://github.com/deeplearning4j/deeplearning4j-docs/tree/gh-pages)
+9. [skymind ai wiki](https://skymind.ai/wiki/)
 
 
 ## lesson1 nd4j基础操作
