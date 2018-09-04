@@ -92,9 +92,9 @@ public class SinCosLstm {
         while (iterator.hasNext()) {
             org.nd4j.linalg.dataset.DataSet dataSet = iterator.next();
 
-            INDArray output = net.output(dataSet.getFeatureMatrix());
+            INDArray output = net.output(dataSet.getFeatures());
 
-            int[] shape = output.shape();
+            long[] shape = output.shape();
             for (int i = 0; i < shape[0]; i++) {
                 labels.add(output.getDouble(i));
             }

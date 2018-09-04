@@ -92,7 +92,7 @@ public class MLPClassifierSaturn {
             trainIter.reset();
             while (trainIter.hasNext()) {
                 DataSet t = trainIter.next();
-                INDArray features = t.getFeatureMatrix();
+                INDArray features = t.getFeatures();
                 INDArray lables = t.getLabels();
                 INDArray predicted = model.output(features,false);
 
@@ -107,7 +107,7 @@ public class MLPClassifierSaturn {
 
         while(testIter.hasNext()){
             DataSet t = testIter.next();
-            INDArray features = t.getFeatureMatrix();
+            INDArray features = t.getFeatures();
             INDArray lables = t.getLabels();
             INDArray predicted = model.output(features,false);
 

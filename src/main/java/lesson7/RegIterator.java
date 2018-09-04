@@ -107,10 +107,6 @@ public class RegIterator implements DataSetIterator {
         return temp;
     }
 
-    @Override
-    public int totalExamples() {
-        return 0;
-    }
 
     @Override
     public int inputColumns() {
@@ -142,15 +138,6 @@ public class RegIterator implements DataSetIterator {
         return miniBatch;
     }
 
-    @Override
-    public int cursor() {
-        throw new UnsupportedOperationException("Not implemented");
-    }
-
-    @Override
-    public int numExamples() {
-        return 0;
-    }
 
     @Override
     public void setPreProcessor(DataSetPreProcessor preProcessor) {

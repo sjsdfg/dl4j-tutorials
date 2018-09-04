@@ -124,7 +124,7 @@ public class MLPClassifierLinear {
         // 遍历我们的测试机
         while(testIter.hasNext()){
             DataSet t = testIter.next();
-            INDArray features = t.getFeatureMatrix();
+            INDArray features = t.getFeatures();
             INDArray lables = t.getLabels();
             /**
              * 在测试集时，我们 trian-> false

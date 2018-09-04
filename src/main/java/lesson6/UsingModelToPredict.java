@@ -105,10 +105,10 @@ public class UsingModelToPredict {
      * @return 灰度图转化
      */
     private static BufferedImage imageFromINDArray(INDArray array) {
-        int[] shape = array.shape();
+        long[] shape = array.shape();
 
-        int height = shape[2];
-        int width = shape[3];
+        int height = (int)shape[2];
+        int width = (int)shape[3];
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_BYTE_GRAY);
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {

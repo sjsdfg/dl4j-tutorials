@@ -96,7 +96,7 @@ public class MLPMnistSingleLayerExample {
         Evaluation eval = new Evaluation(outputNum); //create an evaluation object with 10 possible classes
         while(mnistTest.hasNext()){
             DataSet next = mnistTest.next();
-            INDArray output = model.output(next.getFeatureMatrix(), false); //get the networks prediction
+            INDArray output = model.output(next.getFeatures(), false); //get the networks prediction
             eval.eval(next.getLabels(), output); //check the prediction against the true class
         }
 

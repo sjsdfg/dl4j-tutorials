@@ -106,7 +106,7 @@ public class SingleTimestepRegressionExample {
 
             //Run regression evaluation on our single column input
             RegressionEvaluation evaluation = new RegressionEvaluation(1);
-            INDArray features = testData.getFeatureMatrix();
+            INDArray features = testData.getFeatures();
 
             INDArray lables = testData.getLabels();
             INDArray predicted = net.output(features, false);
@@ -118,8 +118,8 @@ public class SingleTimestepRegressionExample {
         }
 
         //Init rrnTimeStemp with train data and predict test data
-        net.rnnTimeStep(trainData.getFeatureMatrix());
-        INDArray predicted = net.rnnTimeStep(testData.getFeatureMatrix());
+        net.rnnTimeStep(trainData.getFeatures());
+        INDArray predicted = net.rnnTimeStep(testData.getFeatures());
 
         //Revert data back to original values for plotting
         normalizer.revert(trainData);
@@ -138,7 +138,7 @@ public class SingleTimestepRegressionExample {
     }
 
     private static XYSeriesCollection createSeries(XYSeriesCollection seriesCollection, INDArray data, int offset, String name) {
-        int nRows = data.shape()[2];
+        long nRows = data.shape()[2];
         XYSeries series = new XYSeries(name);
         for (int i = 0; i < nRows; i++) {
             series.add(i + offset, data.getDouble(i));

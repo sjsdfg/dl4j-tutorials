@@ -36,7 +36,7 @@ public class Nd4jGetAndSet {
         System.out.println("使用索引迭代器遍历ndarray");
         NdIndexIterator iter = new NdIndexIterator(2, 6);
         while (iter.hasNext()) {
-            int[] nextIndex = iter.next();
+            long[] nextIndex = iter.next();
             double nextVal = nd.getDouble(nextIndex);
 
             System.out.println(nextVal);
