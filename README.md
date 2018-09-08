@@ -128,6 +128,12 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
  1. 博文地址：https://my.oschina.net/u/1778239/blog/1648854
  2. 源码地址：https://gitee.com/lxkm/dl4j-demo/tree/master/digitalrecognition
+ 
+## 【深度学习】图像矫正、dl4j yolo和tesseract ocr
+
+参考资料：
+ 1. 视频地址：https://tianchi.aliyun.com/forum/videoStream.html#postsId=5312
+ 2. 视频代码所在github：https://github.com/awaymeet/tesseract
 
 
  
