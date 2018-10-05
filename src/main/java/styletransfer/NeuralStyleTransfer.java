@@ -92,8 +92,8 @@ public class NeuralStyleTransfer {
     private static final double NOISE_RATION = 0.1;
     private static final int ITERATIONS = 1000;
 
-    private static final String CONTENT_FILE = "/styletransfer/content.jpg";
-    private static final String STYLE_FILE = "/styletransfer/style.jpg";
+    private static final String CONTENT_FILE = "/styletransfer/content1.jpg";
+    private static final String STYLE_FILE = "/styletransfer/style01.png";
     private static final int SAVE_IMAGE_CHECKPOINT = 5;
     private static final String OUTPUT_PATH = "/styletransfer/out/";
 
