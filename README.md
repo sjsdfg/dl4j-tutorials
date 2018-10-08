@@ -136,6 +136,13 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  2. 视频代码所在github：https://github.com/awaymeet/tesseract
 
 
+# Give Me a Favor
+
+<div align="center">
+<img sytle="display:inline;" width="300px"  src="http://static.zybuluo.com/ZzzJoe/ocd9cy7705lq49lfbeddgl18/109389903624384893.jpg" />
+
+<img sytle="display:inline;" width="300px"  src="http://static.zybuluo.com/ZzzJoe/b0bzaf8reigm35g9y8g0y8sb/553116372516409343.png" />
+</div>
  
  
 
