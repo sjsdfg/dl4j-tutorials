@@ -140,6 +140,29 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
   1. https://github.com/fradino/FaceRecognition
   2. https://gitee.com/xshuai/FaceRecognition
+  
+## 获取最新的Deeplearning4j(Snapshots And Daily Builds)
+
+参考资料：
+  1. https://deeplearning4j.org/docs/latest/deeplearning4j-config-snapshots
+  
+配置 `pom.xml` 文件
+```XML
+<repositories>
+    <repository>
+        <id>snapshots-repo</id>
+        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>daily</updatePolicy>  <!-- Optional, update daily -->
+        </snapshots>
+    </repository>
+</repositories>
+```
+自动获取 skymind 所提供的 jar 包编译更新
 
 # Give Me a Favor
 
