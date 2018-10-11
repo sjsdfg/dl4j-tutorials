@@ -135,6 +135,11 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  1. 视频地址：https://tianchi.aliyun.com/forum/videoStream.html#postsId=5312
  2. 视频代码所在github：https://github.com/awaymeet/tesseract
 
+## 人脸识别 - FaceRecognition
+
+参考资料：
+  1. https://github.com/fradino/FaceRecognition
+  2. https://gitee.com/xshuai/FaceRecognition
 
 # Give Me a Favor
 
