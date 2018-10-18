@@ -13,7 +13,7 @@
         <!-- Change the nd4j.backend property to nd4j-cuda-9.2 to use CUDA GPUs -->
         <!-- CPU使用  nd4j-native-platform -->
         <!-- GPU使用  nd4j-cuda-9.2-->
-        <nd4j.backend>nd4j-cuda-9.2</nd4j.backend>
+        <nd4j.backend>nd4j-cuda-9.2-platform</nd4j.backend>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <shadedClassifier>bin</shadedClassifier>
 
