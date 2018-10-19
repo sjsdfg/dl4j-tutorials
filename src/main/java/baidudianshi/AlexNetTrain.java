@@ -50,6 +50,7 @@ import java.util.Random;
 /**
  * Created by Joe on 2018/10/18.
  * 提交得分 - 0.8300
+ * 得分0.8300 模型下载： https://pan.baidu.com/s/1i-v02HnMPQwjtm32fPp67A
  */
 public class AlexNetTrain {
 
