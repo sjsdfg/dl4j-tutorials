@@ -1,0 +1,444 @@
+"C:\Program Files\Java\jdk1.8.0_152\bin\java" -Xms2G -Xmx2G -Dorg.bytedeco.javacpp.maxbytes=10G -Dorg.bytedeco.javacpp.maxphysicalbytes=10G "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.2\lib\idea_rt.jar=10063:C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_152\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_152\jre\lib\rt.jar;D:\workspace\IDEA\dl4j-tutorials\target\classes;C:\Users\73677\.m2\repository\org\nd4j\nd4j-cuda-9.2-platform\1.0.0-beta2\nd4j-cuda-9.2-platform-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\cuda-platform\9.2-7.1-1.4.2\cuda-platform-9.2-7.1-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\cuda\9.2-7.1-1.4.2\cuda-9.2-7.1-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\cuda\9.2-7.1-1.4.2\cuda-9.2-7.1-1.4.2-linux-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\cuda\9.2-7.1-1.4.2\cuda-9.2-7.1-1.4.2-linux-ppc64le.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\cuda\9.2-7.1-1.4.2\cuda-9.2-7.1-1.4.2-macosx-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\cuda\9.2-7.1-1.4.2\cuda-9.2-7.1-1.4.2-windows-x86_64.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-cuda-9.2\1.0.0-beta2\nd4j-cuda-9.2-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-cuda-9.2\1.0.0-beta2\nd4j-cuda-9.2-1.0.0-beta2-linux-x86_64.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-cuda-9.2\1.0.0-beta2\nd4j-cuda-9.2-1.0.0-beta2-macosx-x86_64.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-cuda-9.2\1.0.0-beta2\nd4j-cuda-9.2-1.0.0-beta2-windows-x86_64.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-cuda-9.2\1.0.0-beta2\nd4j-cuda-9.2-1.0.0-beta2-linux-ppc64le.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-cuda-9.2\1.0.0-beta2\deeplearning4j-cuda-9.2-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\slf4j\slf4j-api\1.7.21\slf4j-api-1.7.21.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-api\1.0.0-beta2\nd4j-api-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\com\vlkan\flatbuffers\1.2.0-3f79e055\flatbuffers-1.2.0-3f79e055.jar;C:\Users\73677\.m2\repository\com\github\os72\protobuf-java-shaded-351\0.9\protobuf-java-shaded-351-0.9.jar;C:\Users\73677\.m2\repository\com\github\os72\protobuf-java-util-shaded-351\0.9\protobuf-java-util-shaded-351-0.9.jar;C:\Users\73677\.m2\repository\com\google\code\gson\gson\2.7\gson-2.7.jar;C:\Users\73677\.m2\repository\uk\com\robust-it\cloning\1.9.3\cloning-1.9.3.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-buffer\1.0.0-beta2\nd4j-buffer-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-context\1.0.0-beta2\nd4j-context-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\net\ericaro\neoitertools\1.0.0\neoitertools-1.0.0.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp\1.4.2\javacpp-1.4.2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-core\1.0.0-beta2\deeplearning4j-core-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-tsne\1.0.0-beta2\deeplearning4j-tsne-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\nearestneighbor-core\1.0.0-beta2\nearestneighbor-core-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-datasets\1.0.0-beta2\deeplearning4j-datasets-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-datavec-iterators\1.0.0-beta2\deeplearning4j-datavec-iterators-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-modelimport\1.0.0-beta2\deeplearning4j-modelimport-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5-platform\1.10.2-1.4.2\hdf5-platform-1.10.2-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5\1.10.2-1.4.2\hdf5-1.10.2-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5\1.10.2-1.4.2\hdf5-1.10.2-1.4.2-linux-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5\1.10.2-1.4.2\hdf5-1.10.2-1.4.2-linux-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5\1.10.2-1.4.2\hdf5-1.10.2-1.4.2-linux-ppc64le.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5\1.10.2-1.4.2\hdf5-1.10.2-1.4.2-macosx-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5\1.10.2-1.4.2\hdf5-1.10.2-1.4.2-windows-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\hdf5\1.10.2-1.4.2\hdf5-1.10.2-1.4.2-windows-x86_64.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-nn\1.0.0-beta2\deeplearning4j-nn-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-utility-iterators\1.0.0-beta2\deeplearning4j-utility-iterators-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-util\1.0.0-beta2\deeplearning4j-util-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-common\1.0.0-beta2\nd4j-common-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\com\github\oshi\oshi-core\3.4.2\oshi-core-3.4.2.jar;C:\Users\73677\.m2\repository\net\java\dev\jna\jna-platform\4.3.0\jna-platform-4.3.0.jar;C:\Users\73677\.m2\repository\net\java\dev\jna\jna\4.3.0\jna-4.3.0.jar;C:\Users\73677\.m2\repository\org\threeten\threetenbp\1.3.3\threetenbp-1.3.3.jar;C:\Users\73677\.m2\repository\it\unimi\dsi\fastutil\6.5.7\fastutil-6.5.7.jar;C:\Users\73677\.m2\repository\org\apache\commons\commons-math3\3.5\commons-math3-3.5.jar;C:\Users\73677\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\73677\.m2\repository\org\apache\commons\commons-compress\1.16.1\commons-compress-1.16.1.jar;C:\Users\73677\.m2\repository\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\73677\.m2\repository\org\nd4j\jackson\1.0.0-beta2\jackson-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\yaml\snakeyaml\1.12\snakeyaml-1.12.jar;C:\Users\73677\.m2\repository\org\codehaus\woodstox\stax2-api\3.1.4\stax2-api-3.1.4.jar;C:\Users\73677\.m2\repository\joda-time\joda-time\2.2\joda-time-2.2.jar;C:\Users\73677\.m2\repository\org\datavec\datavec-api\1.0.0-beta2\datavec-api-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\73677\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\73677\.m2\repository\com\clearspring\analytics\stream\2.7.0\stream-2.7.0.jar;C:\Users\73677\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\73677\.m2\repository\com\tdunning\t-digest\3.2\t-digest-3.2.jar;C:\Users\73677\.m2\repository\org\datavec\datavec-data-image\1.0.0-beta2\datavec-data-image-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\com\github\jai-imageio\jai-imageio-core\1.3.0\jai-imageio-core-1.3.0.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\imageio\imageio-jpeg\3.1.1\imageio-jpeg-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\imageio\imageio-core\3.1.1\imageio-core-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\imageio\imageio-metadata\3.1.1\imageio-metadata-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\common\common-lang\3.1.1\common-lang-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\common\common-io\3.1.1\common-io-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\common\common-image\3.1.1\common-image-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\imageio\imageio-tiff\3.1.1\imageio-tiff-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\imageio\imageio-psd\3.1.1\imageio-psd-3.1.1.jar;C:\Users\73677\.m2\repository\com\twelvemonkeys\imageio\imageio-bmp\3.1.1\imageio-bmp-3.1.1.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacv\1.4.2\javacv-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\4.0.1-1.4.2\ffmpeg-4.0.1-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.11.3.121-1.4.2\flycapture-2.11.3.121-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.5-1.4.2\libdc1394-2.2.5-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.3-1.4.2\libfreenect-0.5.3-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\libfreenect2\0.2.0-1.4.2\libfreenect2-0.2.0-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\librealsense\1.12.1-1.4.2\librealsense-1.12.1-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.4.2\videoinput-0.200-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.4.2\artoolkitplus-2.3.1-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.4.2\flandmark-1.07-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\tesseract\4.0.0-beta.3-1.4.2\tesseract-4.0.0-beta.3-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv-platform\3.4.2-1.4.2\opencv-platform-3.4.2-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-android-arm.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-android-arm64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-android-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-android-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-ios-arm64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-ios-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-linux-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-linux-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-linux-armhf.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-linux-ppc64le.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-macosx-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-windows-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.4.2-1.4.2\opencv-3.4.2-1.4.2-windows-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica-platform\1.76.0-1.4.2\leptonica-platform-1.76.0-1.4.2.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-android-arm.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-android-arm64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-android-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-android-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-linux-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-linux-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-linux-armhf.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-linux-ppc64le.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-macosx-x86_64.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-windows-x86.jar;C:\Users\73677\.m2\repository\org\bytedeco\javacpp-presets\leptonica\1.76.0-1.4.2\leptonica-1.76.0-1.4.2-windows-x86_64.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-ui-components\1.0.0-beta2\deeplearning4j-ui-components-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-nlp\1.0.0-beta2\deeplearning4j-nlp-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-native-api\1.0.0-beta2\nd4j-native-api-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\73677\.m2\repository\org\threadly\threadly\4.10.0\threadly-4.10.0.jar;C:\Users\73677\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-jackson\1.0.0-beta2\nd4j-jackson-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\nd4j\nd4j-base64\1.0.0-beta2\nd4j-base64-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-zoo\1.0.0-beta2\deeplearning4j-zoo-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-common\1.0.0-beta2\deeplearning4j-common-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-ui_2.11\1.0.0-beta2\deeplearning4j-ui_2.11-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-play_2.11\1.0.0-beta2\deeplearning4j-play_2.11-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\com\google\protobuf\protobuf-java\2.6.1\protobuf-java-2.6.1.jar;C:\Users\73677\.m2\repository\com\typesafe\akka\akka-actor_2.11\2.3.16\akka-actor_2.11-2.3.16.jar;C:\Users\73677\.m2\repository\com\typesafe\akka\akka-slf4j_2.11\2.3.16\akka-slf4j_2.11-2.3.16.jar;C:\Users\73677\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0\javax.ws.rs-api-2.0.jar;C:\Users\73677\.m2\repository\org\hibernate\hibernate-validator\5.1.3.Final\hibernate-validator-5.1.3.Final.jar;C:\Users\73677\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\73677\.m2\repository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;C:\Users\73677\.m2\repository\com\fasterxml\classmate\1.0.0\classmate-1.0.0.jar;C:\Users\73677\.m2\repository\org\scala-lang\scala-library\2.11.12\scala-library-2.11.12.jar;C:\Users\73677\.m2\repository\org\scala-lang\scala-reflect\2.11.12\scala-reflect-2.11.12.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-java_2.11\2.4.8\play-java_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play_2.11\2.4.8\play_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\build-link\2.4.8\build-link-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-exceptions\2.4.8\play-exceptions-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-iteratees_2.11\2.4.8\play-iteratees_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-json_2.11\2.4.8\play-json_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-functional_2.11\2.4.8\play-functional_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-datacommons_2.11\2.4.8\play-datacommons_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-netty-utils\2.4.8\play-netty-utils-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\twirl-api_2.11\1.1.1\twirl-api_2.11-1.1.1.jar;C:\Users\73677\.m2\repository\org\scala-lang\modules\scala-xml_2.11\1.0.1\scala-xml_2.11-1.0.1.jar;C:\Users\73677\.m2\repository\org\scala-lang\modules\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\73677\.m2\repository\org\scala-stm\scala-stm_2.11\0.7\scala-stm_2.11-0.7.jar;C:\Users\73677\.m2\repository\org\joda\joda-convert\1.7\joda-convert-1.7.jar;C:\Users\73677\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\73677\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\73677\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\73677\.m2\repository\com\google\inject\guice\4.0\guice-4.0.jar;C:\Users\73677\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\73677\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\73677\.m2\repository\com\google\inject\extensions\guice-assistedinject\4.0\guice-assistedinject-4.0.jar;C:\Users\73677\.m2\repository\org\scala-lang\modules\scala-java8-compat_2.11\0.3.0\scala-java8-compat_2.11-0.3.0.jar;C:\Users\73677\.m2\repository\org\springframework\spring-context\4.1.6.RELEASE\spring-context-4.1.6.RELEASE.jar;C:\Users\73677\.m2\repository\org\springframework\spring-core\4.1.6.RELEASE\spring-core-4.1.6.RELEASE.jar;C:\Users\73677\.m2\repository\org\springframework\spring-beans\4.1.6.RELEASE\spring-beans-4.1.6.RELEASE.jar;C:\Users\73677\.m2\repository\org\reflections\reflections\0.9.9\reflections-0.9.9.jar;C:\Users\73677\.m2\repository\net\jodah\typetools\0.4.3\typetools-0.4.3.jar;C:\Users\73677\.m2\repository\org\apache\tomcat\tomcat-servlet-api\8.0.21\tomcat-servlet-api-8.0.21.jar;C:\Users\73677\.m2\repository\org\javassist\javassist\3.19.0-GA\javassist-3.19.0-GA.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-netty-server_2.11\2.4.8\play-netty-server_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\com\typesafe\play\play-server_2.11\2.4.8\play-server_2.11-2.4.8.jar;C:\Users\73677\.m2\repository\io\netty\netty\3.10.4.Final\netty-3.10.4.Final.jar;C:\Users\73677\.m2\repository\com\typesafe\netty\netty-http-pipelining\1.1.4\netty-http-pipelining-1.1.4.jar;C:\Users\73677\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\73677\.m2\repository\com\typesafe\akka\akka-contrib_2.11\2.3.16\akka-contrib_2.11-2.3.16.jar;C:\Users\73677\.m2\repository\com\typesafe\akka\akka-remote_2.11\2.3.16\akka-remote_2.11-2.3.16.jar;C:\Users\73677\.m2\repository\org\uncommons\maths\uncommons-maths\1.2.2a\uncommons-maths-1.2.2a.jar;C:\Users\73677\.m2\repository\com\typesafe\akka\akka-persistence-experimental_2.11\2.3.16\akka-persistence-experimental_2.11-2.3.16.jar;C:\Users\73677\.m2\repository\org\iq80\leveldb\leveldb\0.5\leveldb-0.5.jar;C:\Users\73677\.m2\repository\org\iq80\leveldb\leveldb-api\0.5\leveldb-api-0.5.jar;C:\Users\73677\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.5.1\jackson-core-2.5.1.jar;C:\Users\73677\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.5.1\jackson-databind-2.5.1.jar;C:\Users\73677\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.5.1\jackson-annotations-2.5.1.jar;C:\Users\73677\.m2\repository\com\fasterxml\jackson\module\jackson-module-scala_2.11\2.5.1\jackson-module-scala_2.11-2.5.1.jar;C:\Users\73677\.m2\repository\com\thoughtworks\paranamer\paranamer\2.6\paranamer-2.6.jar;C:\Users\73677\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.5.1\jackson-datatype-jdk8-2.5.1.jar;C:\Users\73677\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.5.1\jackson-datatype-jsr310-2.5.1.jar;C:\Users\73677\.m2\repository\com\typesafe\config\1.3.0\config-1.3.0.jar;C:\Users\73677\.m2\repository\com\typesafe\akka\akka-cluster_2.11\2.3.16\akka-cluster_2.11-2.3.16.jar;C:\Users\73677\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-ui-model\1.0.0-beta2\deeplearning4j-ui-model-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\agrona\Agrona\0.5.4\Agrona-0.5.4.jar;C:\Users\73677\.m2\repository\org\mapdb\mapdb\3.0.5\mapdb-3.0.5.jar;C:\Users\73677\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.0.7\kotlin-stdlib-1.0.7.jar;C:\Users\73677\.m2\repository\org\jetbrains\kotlin\kotlin-runtime\1.0.7\kotlin-runtime-1.0.7.jar;C:\Users\73677\.m2\repository\org\eclipse\collections\eclipse-collections-api\7.1.2\eclipse-collections-api-7.1.2.jar;C:\Users\73677\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\73677\.m2\repository\org\eclipse\collections\eclipse-collections\7.1.2\eclipse-collections-7.1.2.jar;C:\Users\73677\.m2\repository\org\eclipse\collections\eclipse-collections-forkjoin\7.1.2\eclipse-collections-forkjoin-7.1.2.jar;C:\Users\73677\.m2\repository\net\jpountz\lz4\lz4\1.3.0\lz4-1.3.0.jar;C:\Users\73677\.m2\repository\org\mapdb\elsa\3.0.0-M5\elsa-3.0.0-M5.jar;C:\Users\73677\.m2\repository\org\xerial\sqlite-jdbc\3.15.1\sqlite-jdbc-3.15.1.jar;C:\Users\73677\.m2\repository\org\deeplearning4j\deeplearning4j-ui-resources\1.0.0-beta2\deeplearning4j-ui-resources-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\73677\.m2\repository\org\datavec\datavec-data-codec\1.0.0-beta2\datavec-data-codec-1.0.0-beta2.jar;C:\Users\73677\.m2\repository\org\jcodec\jcodec\0.1.5\jcodec-0.1.5.jar;C:\Users\73677\.m2\repository\jfree\jfreechart\1.0.13\jfreechart-1.0.13.jar;C:\Users\73677\.m2\repository\jfree\jcommon\1.0.16\jcommon-1.0.16.jar;C:\Users\73677\.m2\repository\org\jfree\jcommon\1.0.23\jcommon-1.0.23.jar;C:\Users\73677\.m2\repository\org\apache\httpcomponents\httpclient\4.3.6\httpclient-4.3.6.jar;C:\Users\73677\.m2\repository\org\apache\httpcomponents\httpcore\4.3.3\httpcore-4.3.3.jar;C:\Users\73677\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\73677\.m2\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar;C:\Users\73677\.m2\repository\ch\qos\logback\logback-classic\1.1.7\logback-classic-1.1.7.jar;C:\Users\73677\.m2\repository\ch\qos\logback\logback-core\1.1.7\logback-core-1.1.7.jar" baidudianshi.AlexNetTrain
+b.AlexNetTrain - 开始读取文件
+b.AlexNetTrain - 总共的样本数量为2000
+b.AlexNetTrain - trainData URI String Length = 1900, testData URI String Length = 100
+b.AlexNetTrain - 开始数据增强
+o.n.l.f.Nd4jBackend - Loaded [JCublasBackend] backend
+o.n.n.NativeOpsHolder - Number of threads used for NativeOps: 32
+o.n.n.Nd4jBlas - Number of threads used for BLAS: 0
+o.n.l.a.o.e.DefaultOpExecutioner - Backend used: [CUDA]; OS: [Windows 10]
+o.n.l.a.o.e.DefaultOpExecutioner - Cores: [8]; Memory: [1.9GB];
+o.n.l.a.o.e.DefaultOpExecutioner - Blas vendor: [CUBLAS]
+o.n.l.j.o.e.CudaExecutioner - Device Name: [GeForce GTX 1050 Ti]; CC: [6.1]; Total/free memory: [4294967296]
+o.d.n.m.MultiLayerNetwork - Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+o.d.i.r.BaseImageRecordReader - ImageRecordReader: 6 label classes inferred using label generator ParentPathLabelGenerator
+o.d.i.r.BaseImageRecordReader - ImageRecordReader: 6 label classes inferred using label generator ParentPathLabelGenerator
+o.d.e.t.BaseEarlyStoppingTrainer - Starting early stopping training
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 0
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 0: 0.29789473684210527
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 1
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.5039473684210527, epoch = 1 (previous: score = 0.29789473684210527, epoch = 0)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 2
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.5171052631578947, epoch = 2 (previous: score = 0.5039473684210527, epoch = 1)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 3
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.5205263157894737, epoch = 3 (previous: score = 0.5171052631578947, epoch = 2)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 4
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.5389473684210526, epoch = 4 (previous: score = 0.5205263157894737, epoch = 3)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 5
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 5: 0.5192105263157896
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 6
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.585, epoch = 6 (previous: score = 0.5389473684210526, epoch = 4)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 7
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 7: 0.5371052631578948
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 8
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.6497368421052632, epoch = 8 (previous: score = 0.585, epoch = 6)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 9
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.6776315789473684, epoch = 9 (previous: score = 0.6497368421052632, epoch = 8)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 10
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 10: 0.5947368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 11
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 11: 0.6028947368421053
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 12
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 12: 0.5542105263157895
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 13
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 13: 0.5947368421052631
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 14
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 14: 0.5544736842105263
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 15
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 15: 0.5434210526315789
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 16
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 16: 0.6160526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 17
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 17: 0.591842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 18
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 18: 0.583421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 19
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 19: 0.5947368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 20
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 20: 0.6634210526315789
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 21
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 21: 0.6076315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 22
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 22: 0.5721052631578948
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 23
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 23: 0.595
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 24
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 24: 0.6386842105263157
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 25
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 25: 0.6236842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 26
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 26: 0.6068421052631578
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 27
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.7297368421052632, epoch = 27 (previous: score = 0.6776315789473684, epoch = 9)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 28
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 28: 0.6418421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 29
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 29: 0.6610526315789473
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 30
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 30: 0.6213157894736843
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 31
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 31: 0.7089473684210525
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 32
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 32: 0.5957894736842104
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 33
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 33: 0.7044736842105264
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 34
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 34: 0.7105263157894737
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 35
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 35: 0.6152631578947367
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 36
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 36: 0.7218421052631578
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 37
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.7528947368421053, epoch = 37 (previous: score = 0.7297368421052632, epoch = 27)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 38
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 38: 0.6007894736842105
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 39
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 39: 0.6531578947368422
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 40
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 40: 0.6371052631578947
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 41
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 41: 0.7018421052631578
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 42
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 42: 0.7310526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 43
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 43: 0.6731578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 44
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.7610526315789474, epoch = 44 (previous: score = 0.7528947368421053, epoch = 37)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 45
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 45: 0.7463157894736843
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 46
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 46: 0.6657894736842105
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 47
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 47: 0.7586842105263157
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 48
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 48: 0.76
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 49
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 49: 0.7397368421052631
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 50
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.7663157894736843, epoch = 50 (previous: score = 0.7610526315789474, epoch = 44)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 51
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 51: 0.7357894736842105
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 52
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 52: 0.6281578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 53
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 53: 0.6978947368421053
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 54
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 54: 0.7518421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 55
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 55: 0.7521052631578947
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 56
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 56: 0.7113157894736841
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 57
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 57: 0.6386842105263157
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 58
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.7676315789473684, epoch = 58 (previous: score = 0.7663157894736843, epoch = 50)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 59
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 59: 0.7621052631578947
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 60
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 60: 0.7473684210526316
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 61
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 61: 0.7410526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 62
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 62: 0.7242105263157894
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 63
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 63: 0.7326315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 64
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 64: 0.7407894736842104
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 65
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 65: 0.7539473684210527
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 66
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 66: 0.7492105263157895
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 67
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 67: 0.7486842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 68
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 68: 0.7552631578947369
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 69
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 69: 0.6681578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 70
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 70: 0.7657894736842106
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 71
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 71: 0.6468421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 72
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 72: 0.753421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 73
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 73: 0.7405263157894737
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 74
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 74: 0.7523684210526316
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 75
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 75: 0.726842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 76
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 76: 0.6957894736842105
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 77
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 77: 0.7597368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 78
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 78: 0.713421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 79
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 79: 0.6794736842105263
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 80
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.7931578947368421, epoch = 80 (previous: score = 0.7676315789473684, epoch = 58)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 81
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 81: 0.7231578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 82
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 82: 0.6186842105263157
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 83
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 83: 0.6921052631578948
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 84
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 84: 0.7418421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 85
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 85: 0.766842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 86
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 86: 0.7286842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 87
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 87: 0.7826315789473683
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 88
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 88: 0.7502631578947369
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 89
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 89: 0.7852631578947369
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 90
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 90: 0.7728947368421053
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 91
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 91: 0.7768421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 92
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 92: 0.7723684210526316
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 93
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 93: 0.7923684210526316
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 94
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 94: 0.7807894736842105
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 95
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 95: 0.79
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 96
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 96: 0.7897368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 97
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8044736842105262, epoch = 97 (previous: score = 0.7931578947368421, epoch = 80)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 98
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 98: 0.7297368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 99
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 99: 0.7739473684210526
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 100
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 100: 0.7968421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 101
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 101: 0.7628947368421053
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 102
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 102: 0.7894736842105263
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 103
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 103: 0.756842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 104
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 104: 0.7847368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 105
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 105: 0.7178947368421054
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 106
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8113157894736842, epoch = 106 (previous: score = 0.8044736842105262, epoch = 97)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 107
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 107: 0.7528947368421053
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 108
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 108: 0.7947368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 109
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8289473684210527, epoch = 109 (previous: score = 0.8113157894736842, epoch = 106)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 110
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 110: 0.8223684210526316
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 111
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 111: 0.7981578947368422
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 112
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 112: 0.8039473684210526
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 113
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 113: 0.7557894736842106
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 114
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 114: 0.8065789473684211
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 115
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 115: 0.7671052631578947
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 116
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 116: 0.796578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 117
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 117: 0.7781578947368422
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 118
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 118: 0.8226315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 119
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 119: 0.7294736842105263
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 120
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 120: 0.8021052631578948
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 121
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 121: 0.8210526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 122
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 122: 0.8160526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 123
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 123: 0.8034210526315789
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 124
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 124: 0.7957894736842106
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 125
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 125: 0.7968421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 126
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 126: 0.8126315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 127
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 127: 0.8123684210526316
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 128
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 128: 0.7886842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 129
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 129: 0.7905263157894737
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 130
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 130: 0.7386842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 131
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 131: 0.7981578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 132
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 132: 0.7913157894736842
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 133
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 133: 0.8265789473684211
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 134
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8292105263157894, epoch = 134 (previous: score = 0.8289473684210527, epoch = 109)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 135
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 135: 0.8139473684210526
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 136
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 136: 0.7584210526315789
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 137
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 137: 0.8068421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 138
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 138: 0.753421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 139
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 139: 0.7918421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 140
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 140: 0.791578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 141
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 141: 0.8247368421052632
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 142
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 142: 0.8197368421052631
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 143
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 143: 0.7981578947368422
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 144
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 144: 0.7942105263157895
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 145
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 145: 0.8260526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 146
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 146: 0.7960526315789473
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 147
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8365789473684211, epoch = 147 (previous: score = 0.8292105263157894, epoch = 134)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 148
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 148: 0.8092105263157894
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 149
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8421052631578947, epoch = 149 (previous: score = 0.8365789473684211, epoch = 147)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 150
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 150: 0.8234210526315789
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 151
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 151: 0.8326315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 152
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 152: 0.7971052631578948
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 153
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 153: 0.8186842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 154
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 154: 0.8415789473684211
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 155
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 155: 0.8339473684210525
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 156
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 156: 0.81
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 157
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 157: 0.8276315789473685
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 158
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 158: 0.8234210526315789
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 159
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 159: 0.8323684210526316
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 160
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 160: 0.7986842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 161
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 161: 0.8386842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 162
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 162: 0.8060526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 163
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 163: 0.83
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 164
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 164: 0.8402631578947368
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 165
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 165: 0.8357894736842105
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 166
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 166: 0.8286842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 167
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 167: 0.8326315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 168
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 168: 0.8331578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 169
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 169: 0.8310526315789474
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 170
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 170: 0.783157894736842
+ o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 171
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 171: 0.8013157894736842
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 172
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 172: 0.8228947368421053
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 173
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 173: 0.8042105263157895
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 174
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 174: 0.7905263157894737
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 175
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8447368421052632, epoch = 175 (previous: score = 0.8421052631578947, epoch = 149)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 176
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 176: 0.8226315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 177
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 177: 0.8421052631578947
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 178
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 178: 0.8286842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 179
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8455263157894737, epoch = 179 (previous: score = 0.8447368421052632, epoch = 175)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 180
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 180: 0.8368421052631578
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 181
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 181: 0.8165789473684211
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 182
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 182: 0.8355263157894737
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 183
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 183: 0.8221052631578947
+ o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 184
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 184: 0.835
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 185
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 185: 0.8276315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 186
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 186: 0.8339473684210527
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 187
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 187: 0.8421052631578947
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 188
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 188: 0.8313157894736842
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 189
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8478947368421053, epoch = 189 (previous: score = 0.8455263157894737, epoch = 179)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 190
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8492105263157894, epoch = 190 (previous: score = 0.8478947368421053, epoch = 189)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 191
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8497368421052631, epoch = 191 (previous: score = 0.8492105263157894, epoch = 190)
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 192
+o.d.e.t.BaseEarlyStoppingTrainer - New best model: score = 0.8555263157894737, epoch = 192 (previous: score = 0.8497368421052631, epoch = 191)
+ o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 193
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 193: 0.8452631578947368
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 194
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 194: 0.8536842105263158
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 195
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 195: 0.855
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 196
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 196: 0.821578947368421
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 197
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 197: 0.8426315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 198
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 198: 0.8326315789473684
+o.d.e.t.BaseEarlyStoppingTrainer - Completed training epoch 199
+o.d.e.t.BaseEarlyStoppingTrainer - Score at epoch 199: 0.838421052631579
+o.d.e.t.BaseEarlyStoppingTrainer - Hit epoch termination condition at epoch 199. Details: MaxEpochsTerminationCondition(200)
+o.n.j.h.i.CudaZeroHandler - Out of [DEVICE] memory, host memory will be used instead: deviceId: [0], requested bytes: [287749656]
+o.d.i.r.BaseImageRecordReader - ImageRecordReader: 6 label classes inferred using label generator ParentPathLabelGenerator
+b.AlexNetTrain -
+
+========================Evaluation Metrics========================
+ # of classes:    6
+ Accuracy:        0.9100
+ Precision:       0.9127
+ Recall:          0.8757
+ F1 Score:        0.8881
+Precision, recall & F1: macro-averaged (equally weighted avg. of 6 classes)
+
+
+=========================Confusion Matrix=========================
+  0  1  2  3  4  5
+-------------------
+  2  0  1  0  0  0 | 0 = CITY
+  0 30  0  1  1  0 | 1 = DESERT
+  0  1 12  0  2  0 | 2 = FARMLAND
+  0  0  0  8  0  0 | 3 = LAKE
+  0  1  2  0 17  0 | 4 = MOUNTAIN
+  0  0  0  0  0 22 | 5 = OCEAN
+
+Confusion matrix format: Actual (rowClass) predicted as (columnClass) N times
+==================================================================
+
+Process finished with exit code 0
