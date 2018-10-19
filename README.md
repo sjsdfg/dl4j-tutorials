@@ -117,6 +117,82 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
  1. https://blog.csdn.net/u011669700/article/details/80025161
  
+ # 模型训练早停法
+ 
+ ## 1. 创建 ModelSaver
+ 
+ 用于在模型训练过程中，指定最好模型保存的位置：
+ 
+ 1. InMemoryModelSaver：用于保存到内存中
+ 2. LocalFileModelSaver：用于保存到本地目录中，只能保存 `MultiLayerNetwork` 类型的网络结果
+ 3. LocalFileGraphSaver：用于保存到本地目录中，只能保存 `ComputationGraph` 类型的网络结果
+ 
+ ## 2. 配置早停法训练配置项
+ 
+  1. epochTerminationConditions：训练结束条件
+  2. evaluateEveryNEpochs：训练多少个epoch 来进行一次模型评估
+  3. scoreCalculator：模型评估分数的计算者
+         i. org.deeplearning4j.earlystopping.scorecalc.RegressionScoreCalculator 用于回归的分数计算
+         ii. ClassificationScoreCalculator 用于分类任务的分数计算
+  4. modelSaver：模型的存储位置
+  5. iterationTerminationConditions：在每一次迭代的时候用于控制
+ 
+ ## 3. 获取早停法信息
+ ```Java
+ //Conduct early stopping training:
+ EarlyStoppingResult result = trainer.fit();
+ System.out.println("Termination reason: " + result.getTerminationReason());
+ System.out.println("Termination details: " + result.getTerminationDetails());
+ System.out.println("Total epochs: " + result.getTotalEpochs());
+ System.out.println("Best epoch number: " + result.getBestModelEpoch());
+ System.out.println("Score at best epoch: " + result.getBestModelScore());
+ 
+ //Print score vs. epoch
+ Map<Integer,Double> scoreVsEpoch = result.getScoreVsEpoch();
+ List<Integer> list = new ArrayList<>(scoreVsEpoch.keySet());
+ Collections.sort(list);
+ System.out.println("Score vs. Epoch:");
+ for( Integer i : list){
+     System.out.println(i + "\t" + scoreVsEpoch.get(i));
+ }
+ ```
+ 
+ # 迁移学习
+ 
+ ## 1. 获取原有的网络结构
+ 
+ ```Java
+  // 构造数据模型
+ ZooModel zooModel = VGG16.builder().build();
+ ComputationGraph vgg16 = (ComputationGraph) zooModel.initPretrained();
+ ```
+ 
+ 
+ ## 2. 修改模型的训练部分超参数
+ 
+  1. updater
+  2. 学习率
+  3. 随机数种子：用于模型的复现
+ 
+ ```
+  FineTuneConfiguration fineTuneConf = new FineTuneConfiguration.Builder()
+                 .updater(new Nesterovs(0.1, 0.9))
+                 .seed(123)
+                 .build();
+ ```
+ 
+ ## 3. 修改网络架构
+ 
+ ### 3.1 setFeatureExtractor
+ 
+ 用于指定那个层以下为非 frozen 层，非冻结层。
+ 
+ 
+ ### 3.2 结构更改
+ 
+ 1. 一般只有不同网络层之间才会出现 shape 异常：需要根据异常信息调整我们的网络层结构和参数
+ 2. `removeVertexKeepConnections` 和 `addLayer` 或者是 `addVertex` 进行网络结构的更改
+ 
 ## 自定义网络层实现GRU
 
 参考资料：
