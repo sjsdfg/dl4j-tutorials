@@ -12,6 +12,12 @@ DeepLearning4J（DL4J）是一套基于Java语言的神经网络工具包，可�
 
 Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预设的使用，避免多余的配置，让非企业也能够进行快速的原型制作。DL4J同时可以规模化定制。DL4J遵循Apache 2.0许可协议，一切以其为基础的衍生作品均属于衍生作品的作者。
 
+# Give Me a Favor
+
+<center>
+<img src="http://static.zybuluo.com/ZzzJoe/yflamvkjh2i7zn5qcp9wpj61/%E5%AF%92%E6%B2%A7.jpg" />
+</center>
+
 ---
 
 ## 注意
@@ -240,11 +246,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 ```
 自动获取 skymind 所提供的 jar 包编译更新
 
-# Give Me a Favor
 
-<center>
-<img src="http://static.zybuluo.com/ZzzJoe/yflamvkjh2i7zn5qcp9wpj61/%E5%AF%92%E6%B2%A7.jpg" />
-</center>
  
  
 
