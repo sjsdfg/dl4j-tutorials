@@ -117,9 +117,9 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
  1. https://blog.csdn.net/u011669700/article/details/80025161
  
- # 模型训练早停法
+ ## 模型训练早停法
  
- ## 1. 创建 ModelSaver
+ ### 1. 创建 ModelSaver
  
  用于在模型训练过程中，指定最好模型保存的位置：
  
@@ -127,7 +127,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  2. LocalFileModelSaver：用于保存到本地目录中，只能保存 `MultiLayerNetwork` 类型的网络结果
  3. LocalFileGraphSaver：用于保存到本地目录中，只能保存 `ComputationGraph` 类型的网络结果
  
- ## 2. 配置早停法训练配置项
+ ### 2. 配置早停法训练配置项
  
   1. epochTerminationConditions：训练结束条件
   2. evaluateEveryNEpochs：训练多少个epoch 来进行一次模型评估
@@ -137,7 +137,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   4. modelSaver：模型的存储位置
   5. iterationTerminationConditions：在每一次迭代的时候用于控制
  
- ## 3. 获取早停法信息
+ ### 3. 获取早停法信息
  ```Java
  //Conduct early stopping training:
  EarlyStoppingResult result = trainer.fit();
@@ -157,9 +157,9 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  }
  ```
  
- # 迁移学习
+ ## 迁移学习
  
- ## 1. 获取原有的网络结构
+ ### 1. 获取原有的网络结构
  
  ```Java
   // 构造数据模型
@@ -168,7 +168,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  ```
  
  
- ## 2. 修改模型的训练部分超参数
+ ### 2. 修改模型的训练部分超参数
  
   1. updater
   2. 学习率
@@ -181,14 +181,14 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
                  .build();
  ```
  
- ## 3. 修改网络架构
+ ### 3. 修改网络架构
  
- ### 3.1 setFeatureExtractor
+ #### 3.1 setFeatureExtractor
  
  用于指定那个层以下为非 frozen 层，非冻结层。
  
  
- ### 3.2 结构更改
+ #### 3.2 结构更改
  
  1. 一般只有不同网络层之间才会出现 shape 异常：需要根据异常信息调整我们的网络层结构和参数
  2. `removeVertexKeepConnections` 和 `addLayer` 或者是 `addVertex` 进行网络结构的更改
