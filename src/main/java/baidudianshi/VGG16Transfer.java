@@ -102,8 +102,9 @@ public class VGG16Transfer {
 //                new Pair<>(rotateTransform90, 0.9),
 //                new Pair<>(rotateTransform120, 0.9),
                 new Pair<>(warpTransform, 0.9));
-
-        // {@link org.datavec.image.transform.PipelineImageTransform.doTransform}
+        /**
+         * {@link org.datavec.image.transform.PipelineImageTransform.doTransform()}
+         */
         PipelineImageTransform pipelineImageTransform = new PipelineImageTransform(pipeline, true);
 
         // 数据标准化
