@@ -123,6 +123,19 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
  1. https://blog.csdn.net/u011669700/article/details/80025161
  
+ ## baidudianshi 百度点石比赛 baseline demo
+ 
+ 参考资料：
+  1. 比赛地址：http://dianshi.baidu.com/dianshi/pc/competition/22/rule
+  2. 防止比赛结束，数据寻回链接：https://pan.baidu.com/s/1_M0yPejFTvxDFOn4780OPA
+  3. Baseline 0.83 得分模型：https://pan.baidu.com/s/1i-v02HnMPQwjtm32fPp67A （已经保存 Updater 信息，可用于增量训练）
+  4. 内存管理官方文档：https://deeplearning4j.org/docs/latest/deeplearning4j-config-memory
+  5. 迁移学习官方文档：https://deeplearning4j.org/docs/latest/deeplearning4j-nn-transfer-learning
+  6. 迁移学习推荐阅读博客：https://blog.csdn.net/wangongxi/article/details/75127131
+  7. 早停法训练模型官方文档：https://deeplearning4j.org/docs/latest/deeplearning4j-nn-early-stopping
+  8. [百度点石-“探寻地球密码”天宫数据利用大赛.md](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/markdown/%E7%99%BE%E5%BA%A6%E7%82%B9%E7%9F%B3-%E2%80%9C%E6%8E%A2%E5%AF%BB%E5%9C%B0%E7%90%83%E5%AF%86%E7%A0%81%E2%80%9D%E5%A4%A9%E5%AE%AB%E6%95%B0%E6%8D%AE%E5%88%A9%E7%94%A8%E5%A4%A7%E8%B5%9B.md)
+  9. [百度点石-“探寻地球密码”天宫数据利用大赛.pdf](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/%E7%99%BE%E5%BA%A6%E7%82%B9%E7%9F%B3-%E2%80%9C%E6%8E%A2%E5%AF%BB%E5%9C%B0%E7%90%83%E5%AF%86%E7%A0%81%E2%80%9D%E5%A4%A9%E5%AE%AB%E6%95%B0%E6%8D%AE%E5%88%A9%E7%94%A8%E5%A4%A7%E8%B5%9B.pdf)
+ 
  ## 模型训练早停法
  
  ### 1. 创建 ModelSaver
