@@ -98,9 +98,9 @@ public class VGG16Transfer {
         List<Pair<ImageTransform, Double>> pipeline = Arrays.asList(new Pair<>(cropTransform, 0.9),
                 new Pair<>(filpTransform, 0.9),
                 new Pair<>(rotateTransform30, 0.9),
-//                new Pair<>(rotateTransform60, 0.9),
-//                new Pair<>(rotateTransform90, 0.9),
-//                new Pair<>(rotateTransform120, 0.9),
+                new Pair<>(rotateTransform60, 0.9),
+                new Pair<>(rotateTransform90, 0.9),
+                new Pair<>(rotateTransform120, 0.9),
                 new Pair<>(warpTransform, 0.9));
         /**
          * {@link org.datavec.image.transform.PipelineImageTransform.doTransform()}
