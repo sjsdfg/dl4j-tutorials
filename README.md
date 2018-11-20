@@ -6,8 +6,8 @@ deeplearning4j 教程
 
 哔哩哔哩直达地址：https://space.bilibili.com/327018681/#/
 
-**交流群： 289058486**
-**入群问题： Deeplearning4j 源码在 github的地址（mac 系统QQ看不到群问题，入群记得添加答案）**
+ - **交流群： 289058486**
+ - **入群问题： Deeplearning4j 源码在 github的地址（mac 系统QQ看不到群问题，入群记得添加答案）**
 
 DeepLearning4J（DL4J）是一套基于Java语言的神经网络工具包，可以构建、定型和部署神经网络。DL4J与Hadoop和Spark集成，支持分布式CPU和GPU，为商业环境（而非研究工具目的）所设计。Skymind是DL4J的商业支持机构。
 
