@@ -149,13 +149,13 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  
  ### 2. 配置早停法训练配置项
  
-  1. epochTerminationConditions：训练结束条件
-  2. evaluateEveryNEpochs：训练多少个epoch 来进行一次模型评估
-  3. scoreCalculator：模型评估分数的计算者
-         i. org.deeplearning4j.earlystopping.scorecalc.RegressionScoreCalculator 用于回归的分数计算
-         ii. ClassificationScoreCalculator 用于分类任务的分数计算
-  4. modelSaver：模型的存储位置
-  5. iterationTerminationConditions：在每一次迭代的时候用于控制
+1. epochTerminationConditions：训练结束条件
+2. evaluateEveryNEpochs：训练多少个epoch 来进行一次模型评估
+3. scoreCalculator：模型评估分数的计算者
+ - org.deeplearning4j.earlystopping.scorecalc.RegressionScoreCalculator 用于回归的分数计算
+ - ClassificationScoreCalculator 用于分类任务的分数计算
+4. modelSaver：模型的存储位置
+5. iterationTerminationConditions：在每一次迭代的时候用于控制
  
  ### 3. 获取早停法信息
  ```Java
