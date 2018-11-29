@@ -238,6 +238,12 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   1. https://github.com/fradino/FaceRecognition
   2. https://gitee.com/xshuai/FaceRecognition
   
+## Deeplearning4j 实现 Attention
+
+参考资料：
+  1. [直播实现视频 youtube(自备梯子)](https://www.youtube.com/watch?v=XrZ_Y4koV5A)
+  2. [attention 实现源码](https://github.com/treo/dl4j_attention)
+  
 ## 获取最新的Deeplearning4j(Snapshots And Daily Builds)
 
 参考资料：
