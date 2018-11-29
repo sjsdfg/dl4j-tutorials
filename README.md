@@ -55,6 +55,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 8. [旧版本官网github](https://github.com/deeplearning4j/deeplearning4j-docs/tree/gh-pages)
 9. [skymind ai wiki](https://skymind.ai/wiki/)
 10. [skymind开源数据集集合](https://skymind.ai/wiki/open-datasets)
+11. [Java Deep Learning Projects: Implement 10 real-world deep learning using Deeplearning4j and opensource APIs](https://pan.baidu.com/s/1Y2VoO6kLd6RIHCVqpVKzlQ)
 
 
 ## lesson1 nd4j基础操作
