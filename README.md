@@ -242,7 +242,9 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 参考资料：
   1. [直播实现视频 youtube(自备梯子)](https://www.youtube.com/watch?v=XrZ_Y4koV5A)
-  2. [attention 实现源码](https://github.com/treo/dl4j_attention)
+  2. [Implementing NLP Attention Mechanisms with DeepLearning4j(搬运到国内bilibili)](https://www.bilibili.com/video/av37100054/)
+  3. [attention 实现源码](https://github.com/treo/dl4j_attention)
+  4. [Attention Mechanisms (Enterprise AI Virtual Meetup).pdf](https://pan.baidu.com/s/1BzrteMiqlvm_l7Cv54Yc4g)
   
 ## 获取最新的Deeplearning4j(Snapshots And Daily Builds)
 
