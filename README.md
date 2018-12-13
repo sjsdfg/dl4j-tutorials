@@ -80,6 +80,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
  1. [ETL用户指南][3]
  2. [MNIST基础教程，包含一些分类知识][4]
+ 3. [Deeplearning4j Smote 样本均衡实现](https://zhuanlan.zhihu.com/p/52258279)
 
 ## lesson4 Minst手写数字分类
 
