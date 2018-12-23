@@ -247,9 +247,14 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   3. [attention 实现源码](https://github.com/treo/dl4j_attention)
   4. [Attention Mechanisms (Enterprise AI Virtual Meetup).pdf](https://pan.baidu.com/s/1BzrteMiqlvm_l7Cv54Yc4g)
   
-## Deeplearning4j 实现阿尔法狗
+## Deeplearning4j 经典开源项目
 
- 1. [ScalphaGoZero](https://github.com/maxpumperla/ScalphaGoZero):An independent implementation of DeepMind's AlphaGoZero in Scala, using Deeplearning4J (DL4J)
+ 1. [ScalphaGoZero](https://github.com/maxpumperla/ScalphaGoZero):An independent implementation of DeepMind's AlphaGoZero in Scala, using Deeplearning4J (DL4J 实现阿尔法狗)
+ 2. https://github.com/tahaemara/yolo-custom-object-detector : 使用 YOLO 检测实时检测自定义数据集 - 魔方
+ 3. https://github.com/mccorby/PhotoLabeller : 安卓客户端实现分布式训练。 使用 Kotlin 实现
+ 4. https://github.com/tahaemara/real-time-sudoku-solver : 使用 dl4j 解决数独
+ 5. https://github.com/kaiwaehner/kafka-streams-machine-learning-examples : kafka 流训练
+ 6. https://github.com/fra82/textdigester : dl4j 实现文档总结
   
 ## 获取最新的Deeplearning4j(Snapshots And Daily Builds)
 
