@@ -120,6 +120,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
  1. [DeepLearning4j-使用Java训练YOLO模型](https://blog.csdn.net/u011669700/article/details/79886619)
  2. [Java构建汽车无人驾驶：汽车目标检测](https://blog.csdn.net/u011669700/article/details/79432195)
+ 3. [基于深度学习的目标检测技术演进：R-CNN、Fast R-CNN、Faster R-CNN、YOLO、SSD](https://www.julyedu.com/question/big/kp_id/26/ques_id/2103)
  
 ## tensorflow 导入tf模型
 
