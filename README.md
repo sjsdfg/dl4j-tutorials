@@ -280,6 +280,16 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 ```
 自动获取 skymind 所提供的 jar 包编译更新
 
+# Spark 读取数据
+
+1. https://github.com/deeplearning4j/dl4j-examples/issues/689
+
+```
+ok, so there's 2 ways
+(a) use SparkContext.parallelize (that's a standard spark op) - easy but bad performance (all preprocessing happens on master)
+(b) write a better data pipeline that does the proper reading + conversion in parallel
+```
+
 # 额外资源
 
  1. [机器学习高质量数据集大合辑](https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651663921&idx=2&sn=300429e518d159bb7654e1771672429e&chksm=bd4c09a28a3b80b4aa961577a7f59229d23bbd5f88b50bec6de21b0f94bd2fd2b348d1d4eb04&mpshare=1&scene=23&srcid=1023m8ifSIuylq6VcBQKRkt7#rd)
