@@ -254,9 +254,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  1. 简书文章：https://www.jianshu.com/p/4d7f23395e92
  2. gitee代码：https://gitee.com/re6g3y/DL4J-with-LIBGDX
  
-<center>
-    <img src="https://upload-images.jianshu.io/upload_images/2137832-9a808a77f1cab0b9.gif?imageMogr2/auto-orient/strip">
-</center>
+ <div align="center"> <img src="https://upload-images.jianshu.io/upload_images/2137832-9a808a77f1cab0b9.gif?imageMogr2/auto-orient/strip"/> </div>
   
 ## Deeplearning4j 经典开源项目
 
