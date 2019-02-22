@@ -248,6 +248,16 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   3. [attention 实现源码](https://github.com/treo/dl4j_attention)
   4. [Attention Mechanisms (Enterprise AI Virtual Meetup).pdf](https://pan.baidu.com/s/1BzrteMiqlvm_l7Cv54Yc4g)
   
+## 强化学习 RL4j
+
+参考资料：
+ 1. 简书文章：https://www.jianshu.com/p/4d7f23395e92
+ 2. gitee代码：https://gitee.com/re6g3y/DL4J-with-LIBGDX
+ 
+<center>
+    <img src="https://upload-images.jianshu.io/upload_images/2137832-9a808a77f1cab0b9.gif?imageMogr2/auto-orient/strip">
+</center>
+  
 ## Deeplearning4j 经典开源项目
 
  1. [ScalphaGoZero](https://github.com/maxpumperla/ScalphaGoZero):An independent implementation of DeepMind's AlphaGoZero in Scala, using Deeplearning4J (DL4J 实现阿尔法狗)
