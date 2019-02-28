@@ -25,6 +25,7 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 因为使用的maven管理项目，所以第一次使用的时候更改maven配置。更改仓库地址为国内的阿里云
 
 - [Deeplearning4j入门（零）- maven环境配置 - 寒沧](https://www.bilibili.com/video/av25768162)
+- [settings.xml 文件下载](https://github.com/sjsdfg/dl4j-tutorials/blob/master/src/main/resources/setting/settings.xml)
 
 ```
 <mirror>
