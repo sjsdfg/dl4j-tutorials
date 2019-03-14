@@ -26,7 +26,7 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 - [Deeplearning4j入门（零）- maven环境配置 - 寒沧](https://www.bilibili.com/video/av25768162)
 - [settings.xml 文件下载](https://github.com/sjsdfg/dl4j-tutorials/blob/master/src/main/resources/setting/settings.xml)
 
-```
+```xml
 <mirror>
 	<id>nexus-aliyun</id>
 	<mirrorOf>central</mirrorOf>
@@ -36,7 +36,7 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 ```
 
 ### 使用maven把jar包导出为外部
-```
+```bash
 mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 ```
 
@@ -200,7 +200,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   2. 学习率
   3. 随机数种子：用于模型的复现
 
- ```
+ ```java
   FineTuneConfiguration fineTuneConf = new FineTuneConfiguration.Builder()
                  .updater(new Nesterovs(0.1, 0.9))
                  .seed(123)
@@ -327,7 +327,7 @@ mvn install:install-file -Dfile=/path/to/jar -DgroupId=be.tarsos -DartifactId=Ta
 
 1. https://github.com/deeplearning4j/dl4j-examples/issues/689
 
-```
+```java
 ok, so there's 2 ways
 (a) use SparkContext.parallelize (that's a standard spark op) - easy but bad performance (all preprocessing happens on master)
 (b) write a better data pipeline that does the proper reading + conversion in parallel
