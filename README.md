@@ -253,7 +253,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 ## GAN
 
-- [GAN 使用 MNIST 实例。群友 @城枫林 提供](https://github.com/sjsdfg/dl4j-tutorials/commit/be875f78e00ec0cf22a0893818bc0566a24f1206)
+- [GAN 使用 MNIST 实例。群友 @城枫林 提供](https://github.com/sjsdfg/dl4j-tutorials/tree/master/src/main/java/gan)
 
 ## 自制AI图像搜索引擎
 
