@@ -18,7 +18,6 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 <center>
 <img src="http://static.zybuluo.com/ZzzJoe/yflamvkjh2i7zn5qcp9wpj61/%E5%AF%92%E6%B2%A7.jpg" />
 </center>
-
 ---
 
 ## 注意
@@ -124,15 +123,15 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  3. [基于深度学习的目标检测技术演进：R-CNN、Fast R-CNN、Faster R-CNN、YOLO、SSD](https://www.julyedu.com/question/big/kp_id/26/ques_id/2103)
  4. 目标检测自定义数据集：https://pan.baidu.com/s/1u5yYv5SmK_vgd1zq1PsteQ
  <div align="center"> <img src="https://upload-images.jianshu.io/upload_images/2137832-f04063fbdfdaab6e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /> </div>
- 
- 
+
+
 ## tensorflow 导入tf模型
 
 参考资料：
  1. https://blog.csdn.net/u011669700/article/details/80025161
- 
+
  ## baidudianshi 百度点石比赛 baseline demo
- 
+
  参考资料：
   1. 比赛地址：http://dianshi.baidu.com/dianshi/pc/competition/22/rule
   2. 防止比赛结束，数据寻回链接：https://pan.baidu.com/s/1_M0yPejFTvxDFOn4780OPA
@@ -143,19 +142,19 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   7. 早停法训练模型官方文档：https://deeplearning4j.org/docs/latest/deeplearning4j-nn-early-stopping
   8. [百度点石-“探寻地球密码”天宫数据利用大赛.md](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/markdown/%E7%99%BE%E5%BA%A6%E7%82%B9%E7%9F%B3-%E2%80%9C%E6%8E%A2%E5%AF%BB%E5%9C%B0%E7%90%83%E5%AF%86%E7%A0%81%E2%80%9D%E5%A4%A9%E5%AE%AB%E6%95%B0%E6%8D%AE%E5%88%A9%E7%94%A8%E5%A4%A7%E8%B5%9B.md)
   9. [百度点石-“探寻地球密码”天宫数据利用大赛.pdf](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/%E7%99%BE%E5%BA%A6%E7%82%B9%E7%9F%B3-%E2%80%9C%E6%8E%A2%E5%AF%BB%E5%9C%B0%E7%90%83%E5%AF%86%E7%A0%81%E2%80%9D%E5%A4%A9%E5%AE%AB%E6%95%B0%E6%8D%AE%E5%88%A9%E7%94%A8%E5%A4%A7%E8%B5%9B.pdf)
- 
+
  ## 模型训练早停法
- 
+
  ### 1. 创建 ModelSaver
- 
+
  用于在模型训练过程中，指定最好模型保存的位置：
- 
+
  1. InMemoryModelSaver：用于保存到内存中
  2. LocalFileModelSaver：用于保存到本地目录中，只能保存 `MultiLayerNetwork` 类型的网络结果
  3. LocalFileGraphSaver：用于保存到本地目录中，只能保存 `ComputationGraph` 类型的网络结果
- 
+
  ### 2. 配置早停法训练配置项
- 
+
  1. epochTerminationConditions：训练结束条件
  2. evaluateEveryNEpochs：训练多少个epoch 来进行一次模型评估
  3. scoreCalculator：模型评估分数的计算者
@@ -163,7 +162,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
      - ClassificationScoreCalculator 用于分类任务的分数计算
  4. modelSaver：模型的存储位置
  5. iterationTerminationConditions：在每一次迭代的时候用于控制
- 
+
  ### 3. 获取早停法信息
  ```Java
  //Conduct early stopping training:
@@ -183,43 +182,43 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
      System.out.println(i + "\t" + scoreVsEpoch.get(i));
  }
  ```
- 
+
  ## 迁移学习
- 
+
  ### 1. 获取原有的网络结构
- 
+
  ```Java
   // 构造数据模型
  ZooModel zooModel = VGG16.builder().build();
  ComputationGraph vgg16 = (ComputationGraph) zooModel.initPretrained();
  ```
- 
- 
+
+
  ### 2. 修改模型的训练部分超参数
- 
+
   1. updater
   2. 学习率
   3. 随机数种子：用于模型的复现
- 
+
  ```
   FineTuneConfiguration fineTuneConf = new FineTuneConfiguration.Builder()
                  .updater(new Nesterovs(0.1, 0.9))
                  .seed(123)
                  .build();
  ```
- 
+
  ### 3. 修改网络架构
- 
+
  #### 3.1 setFeatureExtractor
- 
+
  用于指定那个层以下为非 frozen 层，非冻结层。
- 
- 
+
+
  #### 3.2 结构更改
- 
+
  1. 一般只有不同网络层之间才会出现 shape 异常：需要根据异常信息调整我们的网络层结构和参数
  2. `removeVertexKeepConnections` 和 `addLayer` 或者是 `addVertex` 进行网络结构的更改
- 
+
 ## 自定义网络层实现GRU
 
 参考资料：
@@ -231,7 +230,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
  1. 博文地址：https://my.oschina.net/u/1778239/blog/1648854
  2. 源码地址：https://gitee.com/lxkm/dl4j-demo/tree/master/digitalrecognition
- 
+
 ## 【深度学习】图像矫正、dl4j yolo和tesseract ocr
 
 参考资料：
@@ -243,23 +242,59 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
   1. https://github.com/fradino/FaceRecognition
   2. https://gitee.com/xshuai/FaceRecognition
-  
+
 ## Deeplearning4j 实现 Attention
 
 参考资料：
-  1. [直播实现视频 youtube(自备梯子)](https://www.youtube.com/watch?v=XrZ_Y4koV5A)
-  2. [Implementing NLP Attention Mechanisms with DeepLearning4j(搬运到国内bilibili)](https://www.bilibili.com/video/av37100054/)
-  3. [attention 实现源码](https://github.com/treo/dl4j_attention)
-  4. [Attention Mechanisms (Enterprise AI Virtual Meetup).pdf](https://pan.baidu.com/s/1BzrteMiqlvm_l7Cv54Yc4g)
-  
+    1. [直播实现视频 youtube(自备梯子)](https://www.youtube.com/watch?v=XrZ_Y4koV5A)
+    2. [Implementing NLP Attention Mechanisms with DeepLearning4j(搬运到国内bilibili)](https://www.bilibili.com/video/av37100054/)
+    3. [attention 实现源码](https://github.com/treo/dl4j_attention)
+    4. [Attention Mechanisms (Enterprise AI Virtual Meetup).pdf](https://pan.baidu.com/s/1BzrteMiqlvm_l7Cv54Yc4g)
+
+
+
+# GAN
+
+- [GAN 使用 MNIST 实例。群友 @城枫林 提供](https://github.com/sjsdfg/dl4j-tutorials/commit/be875f78e00ec0cf22a0893818bc0566a24f1206)
+
+
+
+# 自制AI图像搜索引擎
+
+  群友 @射水鱼 攥写了一本使用 DeepLearning4j 实现的《自制AI图像搜索引擎》
+
+按章节详细讲述了图像搜索引擎各主要组成部分的原理和实现，并在最后一章带领大家使用DL4J从零开始逐步构建了一个基于深度学习的Web图像搜索引擎，使读者能够更透彻地理解图像检索的理论并具有独立地实现一个在线图像搜索引擎的实际能力。每章都在对相关理论和方法进行阐述的同时，使用基于Java语言的实现代码和详实的代码注释来对相关理论和方法进行复述。
+
+- 书籍地址：[https://www.epubit.com/book/detail/30316](qq://txfile/#)
+- 源码地址：[https://box.lenovo.com/l/LHh2vR](qq://txfile/#) 密码: 1aaa  
+
+```xml
+<dependency>
+    <groupId>be.tarsos</groupId>
+    <artifactId>TarsosLSH</artifactId>
+    <version>${tarsosLSH.version}</version>
+</dependency>
+```
+
+如果导入项目中有依赖缺失，下载以下 jar 包：
+
+- [TarsosLSH-0.9 下载地址](https://pan.baidu.com/s/1sbmvbkab6K5tRF92U-ItHw) 提取码：88qv
+- [TarsosLSH github地址，也可以自行编译](https://github.com/JorenSix/TarsosLSH)
+
+使用 `<scope> system </scope>`进行本地的 jar 包导入，或者使用以下命令安装在本地的 maven 仓库中：
+
+```bash
+mvn install:install-file -Dfile=/path/to/jar -DgroupId=be.tarsos -DartifactId=TarsosLSH -Dversion=0.9 -Dpackaging=jar
+```
+
 ## 强化学习 RL4j
 
 参考资料：
  1. 简书文章：https://www.jianshu.com/p/4d7f23395e92
  2. gitee代码：https://gitee.com/re6g3y/DL4J-with-LIBGDX
- 
+
  <div align="center"> <img src="https://upload-images.jianshu.io/upload_images/2137832-9a808a77f1cab0b9.gif?imageMogr2/auto-orient/strip"/> </div>
-  
+
 ## Deeplearning4j 经典开源项目
 
  1. [ScalphaGoZero](https://github.com/maxpumperla/ScalphaGoZero):An independent implementation of DeepMind's AlphaGoZero in Scala, using Deeplearning4J (DL4J 实现阿尔法狗)
@@ -268,12 +303,12 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  4. https://github.com/tahaemara/real-time-sudoku-solver : 使用 dl4j 解决数独
  5. https://github.com/kaiwaehner/kafka-streams-machine-learning-examples : kafka 流训练
  6. https://github.com/fra82/textdigester : dl4j 实现文档总结
-  
+
 ## 获取最新的Deeplearning4j(Snapshots And Daily Builds)
 
 参考资料：
   1. https://deeplearning4j.org/docs/latest/deeplearning4j-config-snapshots
-  
+
 配置 `pom.xml` 文件
 ```XML
 <repositories>
@@ -309,14 +344,14 @@ ok, so there's 2 ways
  3. [gitxiv:只提供有复现开源代码的论文](http://www.gitxiv.com/)
 
 
- 
+
  
 
-  [2]: https://deeplearning4j.org/cn/neuralnet-overview
-  [3]: https://deeplearning4j.org/cn/etl-userguide
-  [4]: https://deeplearning4j.org/cn/mnist-for-beginners
-  [5]: http://blog.csdn.net/u011669700/article/details/79113789
-  [6]: https://deeplearning4j.org/quickref
-  [7]: https://deeplearning4j.org/examples-tour
-  [8]: https://blog.csdn.net/u011669700/article/details/80139619
-  [9]: https://blog.csdn.net/qq_41185868/article/details/79995732
+[2]: https://deeplearning4j.org/cn/neuralnet-overview
+[3]: https://deeplearning4j.org/cn/etl-userguide
+[4]: https://deeplearning4j.org/cn/mnist-for-beginners
+[5]: http://blog.csdn.net/u011669700/article/details/79113789
+[6]: https://deeplearning4j.org/quickref
+[7]: https://deeplearning4j.org/examples-tour
+[8]: https://blog.csdn.net/u011669700/article/details/80139619
+[9]: https://blog.csdn.net/qq_41185868/article/details/79995732
