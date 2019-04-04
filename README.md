@@ -18,6 +18,7 @@ Deeplearning4j拥有先进的技术，以即插即用为目标，通过更多预
 <center>
 <img src="http://static.zybuluo.com/ZzzJoe/yflamvkjh2i7zn5qcp9wpj61/%E5%AF%92%E6%B2%A7.jpg" />
 </center>
+
 ---
 
 ## 注意
@@ -57,6 +58,9 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 10. [skymind开源数据集集合](https://skymind.ai/wiki/open-datasets)
 11. [Java Deep Learning Projects: Implement 10 real-world deep learning using Deeplearning4j and opensource APIs](https://pan.baidu.com/s/1Y2VoO6kLd6RIHCVqpVKzlQ)
 
+## 调参
+
+1. [我搭的神经网络不work该怎么办！看看这11条新手最容易犯的错误](https://mp.weixin.qq.com/s?__biz=MzIxMjAzNDY5Mg==&mid=2650791830&idx=1&sn=da81a253d4753e78d0ad5040ecf3ca29&chksm=8f474a7db830c36bf083c8e22414b2b2ee0fd38dd60175921952ae01c669ce4a3d105f972b09&mpshare=1&scene=1&srcid=0913NEV8u5Rz7fdaIDjAPnvs#rd
 
 ## lesson1 nd4j基础操作
 
