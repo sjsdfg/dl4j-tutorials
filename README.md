@@ -343,6 +343,7 @@ ok, so there's 2 ways
  1. [机器学习高质量数据集大合辑](https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651663921&idx=2&sn=300429e518d159bb7654e1771672429e&chksm=bd4c09a28a3b80b4aa961577a7f59229d23bbd5f88b50bec6de21b0f94bd2fd2b348d1d4eb04&mpshare=1&scene=23&srcid=1023m8ifSIuylq6VcBQKRkt7#rd)
  2. [中文开放聊天语料整理](https://github.com/codemayq/chaotbot_corpus_Chinese)
  3. [gitxiv:只提供有复现开源代码的论文](http://www.gitxiv.com/)
+ 4. [hadoop-winutils](https://github.com/steveloughran/winutils)：提供 hadoop 工具在 windows 平台下的 hadoop.dll和winutils.exe。便于 windows 下运行 spark-local 模式
 
 
 
