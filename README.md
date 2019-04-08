@@ -105,12 +105,21 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 参考资料：
  1. [关于深度学习之CNN经典论文原文(1950~2018)简介][9]
- 3. [Visualizing and Understanding CNNs.pdf](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/Visualizing%20and%20Understanding%20CNNs.pdf)
- 4. [Deeplearning4j-使用Cuda 9.1和 Cudnn7.1 加速模型训练](https://www.jianshu.com/p/8a7533c2c79a)
- 5. [在Deeplearning4j中使用cuDNN](https://blog.csdn.net/u011669700/article/details/79028821)
- 6. [Using Deeplearning4j with cuDNN](https://deeplearning4j.org/cudnn)
- 7. [deep learning for computer vision with python(3 本)](https://pan.baidu.com/s/17UMo76p75piTcArqu0wXJQ) 密码：vr0r
- 8. [对ResNet本质的一些思考](https://zhuanlan.zhihu.com/p/60668529)
+ 2. [Visualizing and Understanding CNNs.pdf](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/Visualizing%20and%20Understanding%20CNNs.pdf)
+ 3. [deep learning for computer vision with python(3 本)](https://pan.baidu.com/s/17UMo76p75piTcArqu0wXJQ) 密码：vr0r
+ 4. [对ResNet本质的一些思考](https://zhuanlan.zhihu.com/p/60668529)
+
+在使用 GPU 加速之前请务必确认一下几点：
+ 1. 电脑是否为 **英伟达** GPU，即 GTX 系列，使用 AMD 显卡无法使用 GPU 加速
+ 2. 电脑是否安装了 cuda ，如果安装了 cuda 请确认安装的 cuda 版本和你 pom 中引入的 `nd4j.backend` 版本是否对应
+ 3. 电脑安装 cuda 之后请确保你的 IDE 已经感知到环境变量的变化，在 IDE 中的 `terminal` 使用 `nvcc -V` 命令查看。如不确定直接重启电脑即可
+ 
+以下为 GPU 安装和使用教程：
+ 1. [Deeplearning4j-使用Cuda 9.1和 Cudnn7.1 加速模型训练](https://www.jianshu.com/p/8a7533c2c79a)
+ 2. [在Deeplearning4j中使用cuDNN](https://blog.csdn.net/u011669700/article/details/79028821)
+ 
+如想确定 DeepLearning4j 已经支持的 cuda 和 cudnn 的配套版本，请打开如下链接：
+ 1. [Using Deeplearning4j with cuDNN](https://deeplearning4j.org/cudnn) ：搜索 `CUDA Version` 字眼
 
 ## lesson7 RNN循环神经网络
 
