@@ -118,6 +118,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 以下为 GPU 安装和使用教程：
  1. [Deeplearning4j-使用Cuda 9.1和 Cudnn7.1 加速模型训练](https://www.jianshu.com/p/8a7533c2c79a)
  2. [在Deeplearning4j中使用cuDNN](https://blog.csdn.net/u011669700/article/details/79028821)
+ 3. [【视频】Deeplearning4j入门 - （十）GPU加速训练 - 寒沧](https://www.bilibili.com/video/av24603590)
  
 如想确定 DeepLearning4j 已经支持的 cuda 和 cudnn 的配套版本，请打开如下链接：
  1. [Using Deeplearning4j with cuDNN](https://deeplearning4j.org/cudnn) ：搜索 `CUDA Version` 字眼
