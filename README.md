@@ -77,8 +77,8 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
 
  1. [深度神经网络简介][2]
- 1. http://www.jianshu.com/p/1d80023119cc
- 2. http://neuralnetworksanddeeplearning.com/chap4.html
+ 2. [译-第四章 可视化证明神经网络可以计算任何函数](http://www.jianshu.com/p/1d80023119cc)
+ 3. [A visual proof that neural nets can compute any function](http://neuralnetworksanddeeplearning.com/chap4.html)
 
 ## lesson3 简易数据分类
 参考资料：
