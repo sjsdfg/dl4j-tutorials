@@ -347,6 +347,8 @@ mvn install:install-file -Dfile=/path/to/jar -DgroupId=be.tarsos -DartifactId=Ta
 # Spark 读取数据
 
 1. https://github.com/deeplearning4j/dl4j-examples/issues/689
+2. [Spark Data Pipelines Guide](https://deeplearning4j.org/docs/latest/deeplearning4j-scaleout-data-howto)
+3. [Spark 训练指南](https://deeplearning4j.org/docs/latest/deeplearning4j-scaleout-howto)
 
 ```java
 ok, so there's 2 ways
