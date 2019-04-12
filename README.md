@@ -62,6 +62,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 1. [我搭的神经网络不work该怎么办！看看这11条新手最容易犯的错误](https://mp.weixin.qq.com/s?__biz=MzIxMjAzNDY5Mg==&mid=2650791830&idx=1&sn=da81a253d4753e78d0ad5040ecf3ca29&chksm=8f474a7db830c36bf083c8e22414b2b2ee0fd38dd60175921952ae01c669ce4a3d105f972b09&mpshare=1&scene=1&srcid=0913NEV8u5Rz7fdaIDjAPnvs#rd)
 2. [nd4j 和 DeepLearning4j 性能调优 debug](https://deeplearning4j.org/docs/latest/deeplearning4j-config-performance-debugging)
+3. [神经网络训练问题排查](https://deeplearning4j.org/cn/troubleshootingneuralnets)
 
 ## lesson1 nd4j基础操作
 
