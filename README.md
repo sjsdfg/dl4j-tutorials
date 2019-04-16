@@ -80,6 +80,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  1. [深度神经网络简介][2]
  2. [译-第四章 可视化证明神经网络可以计算任何函数](http://www.jianshu.com/p/1d80023119cc)
  3. [A visual proof that neural nets can compute any function](http://neuralnetworksanddeeplearning.com/chap4.html)
+ 4. [神经网络中Epoch、Iteration、Batchsize相关理解和说明](https://blog.csdn.net/program_developer/article/details/78597738)
 
 ## lesson3 简易数据分类
 参考资料：
