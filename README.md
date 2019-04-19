@@ -263,6 +263,13 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 参考资料：
   1. https://github.com/fradino/FaceRecognition
   2. https://gitee.com/xshuai/FaceRecognition
+  
+
+## 推荐系统 - Recommend
+
+参考资料：
+  1. [lib-rec](https://github.com/guoguibing/librec)：https://github.com/guoguibing/librec/tree/3.0.0/core/src/main/java/net/librec/recommender/nn
+  2. [inception](https://github.com/inception-project/inception)：https://github.com/inception-project/inception/tree/master/inception-imls-dl4j/src/main/java/de/tudarmstadt/ukp/inception/recommendation/imls/dl4j/pos
 
 ## Deeplearning4j 实现 Attention
 
