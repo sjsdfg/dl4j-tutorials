@@ -257,6 +257,10 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 机器学习算法底层均使用 Nd4j 实现。代码可以参考迁移到使用 dl4j 框架的代码中。
 
+|作者|洪钊桦|
+|---|---
+|E-mail|110399057@qq.com, jstarcraft@gmail.com
+
 ## 整合DL4J训练模型与Web工程
 参考资料：
  1. 博文地址：https://my.oschina.net/u/1778239/blog/1648854
