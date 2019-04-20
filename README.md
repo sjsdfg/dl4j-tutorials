@@ -385,6 +385,7 @@ ok, so there's 2 ways
  3. [gitxiv:只提供有复现开源代码的论文](http://www.gitxiv.com/)
  4. [hadoop-winutils](https://github.com/steveloughran/winutils)：提供 hadoop 工具在 windows 平台下的 hadoop.dll和winutils.exe。便于 windows 下运行 spark-local 模式
  5. [深度学习理论与实战：提高篇](http://fancyerii.github.io/2019/03/14/dl-book/)
+ 6. [tablesaw](https://github.com/jtablesaw/tablesaw)：Java dataframe and visualization library https://jtablesaw.github.io/tablesaw/  提供类似于 Python 中的 Pandas 和 Matplot 的功能
 
 
 
