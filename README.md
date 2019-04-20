@@ -247,6 +247,16 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 根据GRU前向公式推导反向公式，并在dl4j中实现。
 
+## JStarCraft
+
+群友 [@HongZhaoHua](https://github.com/HongZhaoHua) 实现
+
+1. [JStarCraft Core](https://github.com/HongZhaoHua/jstarcraft-core-1.0)：JStarCraft Core是一个面向对象的轻量级框架,遵循Apache 2.0协议。
+2. [JStarCraft AI](https://github.com/HongZhaoHua/jstarcraft-ai-1.0)：JStarCraft AI是一个机器学习的轻量级框架.遵循Apache 2.0协议.
+3. [JStarCraft Recommendation](https://github.com/HongZhaoHua/jstarcraft-recommendation-1.0)：JStarCraft Recommendation是一个面向推荐系统的轻量级引擎.遵循Apache 2.0协议。JStarCraft Recommendation引擎基于JStarCraft AI框架重构了所有LibRec引擎的推荐算法。
+
+机器学习算法底层均使用 Nd4j 实现。代码可以参考迁移到使用 dl4j 框架的代码中。
+
 ## 整合DL4J训练模型与Web工程
 参考资料：
  1. 博文地址：https://my.oschina.net/u/1778239/blog/1648854
