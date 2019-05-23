@@ -278,6 +278,19 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   1. https://github.com/fradino/FaceRecognition
   2. https://gitee.com/xshuai/FaceRecognition
   
+  
+## 天池比赛-工业蒸汽量预测
+
+-[参赛地址](https://tianchi.aliyun.com/competition/entrance/231693/introduction?spm=5176.12281949.1003.9.493e4c2apzwdri)
+
+### 背景
+  火力发电的基本原理是：燃料在燃烧时加热水生成蒸汽，蒸汽压力推动汽轮机旋转，然后汽轮机带动发电机旋转，产生电能。在这一系列的能量转化中，影响发电效率的核心是锅炉的燃烧效率，即燃料燃烧加热水产生高温高压蒸汽。锅炉的燃烧效率的影响因素很多，包括锅炉的可调参数，如燃烧给量，一二次风，引风，返料风，给水水量；以及锅炉的工况，比如锅炉床温、床压，炉膛温度、压力，过热器的温度等。
+  
+### 目标
+
+经脱敏后的锅炉传感器采集的数据（采集频率是分钟级别），根据锅炉的工况，预测产生的蒸汽量。
+
+- [deeplearning4j解蒸汽比赛的思路（0.1136）](https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12281897.0.0.a0792658MVZabi&postId=58269)
 
 ## 推荐系统 - Recommend
 
