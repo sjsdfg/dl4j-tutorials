@@ -281,7 +281,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 ## 参数共享
 
-感谢群友 [@冷血狂魔 ] [@Gerry]
+感谢群友 [@冷血狂魔]() [@Gerry]()
 
 - StackVertex，用它就能实现参数共享
 
@@ -295,7 +295,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 - 沿着 dimension=0 合并的好处是无论第 0 维的长度为多少，权重 w 的 shape 都不会变，而且在反向计算梯度恰好等于两个 input 的产生的梯度的和
 - 所以只要使用 StackVertex 对 n 个输入进行合并，后面随意接 Layer 都能达到目的，最后用 UnstackVertex 拆分
 
-数学推导 [@Gerry] 提供。其从矩阵运算角度说明 StackVertex 只做合并就能实现参数共享的原因
+数学推导 [@Gerry]() 提供。其从矩阵运算角度说明 StackVertex 只做合并就能实现参数共享的原因
   
 ## 天池比赛-工业蒸汽量预测
 
