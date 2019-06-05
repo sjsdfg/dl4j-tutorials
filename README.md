@@ -292,8 +292,8 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 与其类似的类为 `MergeVertex`，与其的主要区别在于：
 
 - Merge 的合并方式是沿着 dimension=1 合并，Stack 是沿着 dimension=0 合并
-- 沿着 dimension=0 合并的好处是无论第 0 维的长度为多少，权重 w 的 shape 都不会变，而且在反向计算梯度恰好等于两个 input 的产生的梯度的和
-- 所以只要使用 StackVertex 对 n 个输入进行合并，后面随意接 Layer 都能达到目的，最后用 UnstackVertex 拆分
+- 沿着 dimension=0 合并的好处是无论第 0 维的长度为多少，权重 w 的 shape 都不会变，而且在反向计算梯度恰好等于 n 个 input 的产生的梯度的和
+- 所以只要使用 StackVertex 对 n 个输入进行合并，后面随意拼接神经网络层，诸如 DenseLayer, LSTM, ConvLayer 都能达到目的，最后用 UnstackVertex 拆分输出
 
 数学推导 [@Gerry]() 提供。其从矩阵运算角度说明 StackVertex 只做合并就能实现参数共享的原因
   
