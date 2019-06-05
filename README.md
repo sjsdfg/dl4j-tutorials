@@ -278,6 +278,24 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
   1. https://github.com/fradino/FaceRecognition
   2. https://gitee.com/xshuai/FaceRecognition
   
+
+## 参数共享
+
+感谢群友 [@冷血狂魔 ] [@Gerry]
+
+- StackVertex，用它就能实现参数共享
+
+数学方法参数证明：
+
+- [DeepLearning4j 的 StackVertex 实现参数共享 ](https://blog.csdn.net/pangerry/article/details/90814970)
+
+与其类似的类为 `MergeVertex`，与其的主要区别在于：
+
+- Merge 的合并方式是沿着 dimension=1 合并，Stack 是沿着 dimension=0 合并
+- 沿着 dimension=0 合并的好处是无论第 0 维的长度为多少，权重 w 的 shape 都不会变，而且在反向计算梯度恰好等于两个 input 的产生的梯度的和
+- 所以只要使用 StackVertex 对 n 个输入进行合并，后面随意接 Layer 都能达到目的，最后用 UnstackVertex 拆分
+
+数学推导 [@Gerry] 提供。其从矩阵运算角度说明 StackVertex 只做合并就能实现参数共享的原因
   
 ## 天池比赛-工业蒸汽量预测
 
