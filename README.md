@@ -411,6 +411,11 @@ ok, so there's 2 ways
 (b) write a better data pipeline that does the proper reading + conversion in parallel
 ```
 
+# 群友项目分享
+
+1. 基于dl4j的快三爬取和训练以及预测:https://github.com/awaymeet/lottery_kuai_san/tree/master
+2. 开源的学习SpringCloud和Deeplaring4j和IBMWaston知识的项目: https://github.com/JamesZow/Spring-Cloud-Project
+
 # 额外资源
 
  1. [机器学习高质量数据集大合辑](https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651663921&idx=2&sn=300429e518d159bb7654e1771672429e&chksm=bd4c09a28a3b80b4aa961577a7f59229d23bbd5f88b50bec6de21b0f94bd2fd2b348d1d4eb04&mpshare=1&scene=23&srcid=1023m8ifSIuylq6VcBQKRkt7#rd)
