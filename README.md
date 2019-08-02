@@ -415,6 +415,7 @@ ok, so there's 2 ways
 
 1. 基于dl4j的快三爬取和训练以及预测:https://github.com/awaymeet/lottery_kuai_san/tree/master
 2. 开源的学习SpringCloud和Deeplaring4j和IBMWaston知识的项目: https://github.com/JamesZow/Spring-Cloud-Project
+3. DL4J的CNN+RNN+CTC的文字识别的demo：https://github.com/WuWei1986/dl4j-ocr-demo
 
 # 额外资源
 
