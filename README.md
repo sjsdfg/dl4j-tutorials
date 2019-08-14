@@ -111,6 +111,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  2. [Visualizing and Understanding CNNs.pdf](https://github.com/sjsdfg/deeplearning4j-issues/blob/master/Visualizing%20and%20Understanding%20CNNs.pdf)
  3. [deep learning for computer vision with python(3 本)](https://pan.baidu.com/s/17UMo76p75piTcArqu0wXJQ) 密码：vr0r
  4. [对ResNet本质的一些思考](https://zhuanlan.zhihu.com/p/60668529)
+ 5. [DL4J之CNN对今日头条文本分类](https://my.oschina.net/u/1778239/blog/3089890)
 
 在使用 GPU 加速之前请务必确认一下几点：
  1. 电脑是否为 **英伟达** GPU，即 GTX 系列，使用 AMD 显卡无法使用 GPU 加速
@@ -330,6 +331,7 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 - [GAN 使用 MNIST 实例](https://github.com/sjsdfg/dl4j-tutorials/tree/master/src/main/java/gan)。群友 @城枫林 和 [@liweigu](https://github.com/liweigu) 提供
 - [gan_deeplearning4j](https://github.com/hamaadshah/gan_deeplearning4j)
+- [如何用Deeplearning4j实现GAN](https://my.oschina.net/u/1778239/blog/3090072)
 
 ## 自制AI图像搜索引擎
 
