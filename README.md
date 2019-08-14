@@ -133,6 +133,31 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  2. 循环网络和LSTM教程：https://deeplearning4j.org/cn/recurrentnetwork
  3. DL4J中的循环网络：https://deeplearning4j.org/cn/usingrnns
  4. [DeepLearning4j: LSTM Network Example](https://deeplearning4j.org/programmingguide/05_lstm)
+ 
+****
+
+## JStarCraft,一个涵盖核心编程,人工智能,推荐与搜索领域的轻量级框架
+
+群友 [@HongZhaoHua](https://github.com/HongZhaoHua) 实现
+
+JStarCraft Core：提供了缓存，ORM，编解码，资源管理，脚本，监控，通讯，事务8个方面的核心特性，是整个框架的核心。
+[https://github.com/HongZhaoHua/jstarcraft-core](https://github.com/HongZhaoHua/jstarcraft-core)
+
+JStarCraft AI：包含了多种矩阵和向量计算的实现，支持硬件加速和并行计算，是目前最快最全的Java矩阵/向量计算库。 
+[https://github.com/HongZhaoHua/jstarcraft-ai](https://github.com/HongZhaoHua/jstarcraft-ai)
+
+JStarCraft RNS：包含了70多种排序预测与评分预测算法，支持多种脚本语言，是覆盖范围最全的Java推荐与搜索引擎。
+[https://github.com/HongZhaoHua/jstarcraft-rns](https://github.com/HongZhaoHua/jstarcraft-rns)
+
+JStarCraft Example：一个基于JStarCraft RNS引擎,Spring Boot框架和MovieLens 100K数据集搭建的电影演示项目，包括个性化推荐与个性化搜索两个部分。
+系统会根据用户的行为记录，自动调整用户的推荐内容和搜索内容。
+[https://github.com/HongZhaoHua/jstarcraft-example](https://github.com/HongZhaoHua/jstarcraft-example)
+
+| 作者 | 洪钊桦 |
+| --- | --- |
+| E-mail | 110399057@qq.com, jstarcraft@gmail.com |
+
+****
 
 ## ObjectDetection 目标检测
 
@@ -247,20 +272,6 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  1. https://github.com/Gerry-Pan/pan-dl4j
 
 根据GRU前向公式推导反向公式，并在dl4j中实现。
-
-## JStarCraft
-
-群友 [@HongZhaoHua](https://github.com/HongZhaoHua) 实现
-
-1. [JStarCraft Core](https://github.com/HongZhaoHua/jstarcraft-core-1.0)：JStarCraft Core是一个面向对象的轻量级框架,遵循Apache 2.0协议。
-2. [JStarCraft AI](https://github.com/HongZhaoHua/jstarcraft-ai-1.0)：JStarCraft AI是一个机器学习的轻量级框架.遵循Apache 2.0协议.
-3. [JStarCraft Recommendation](https://github.com/HongZhaoHua/jstarcraft-recommendation-1.0)：JStarCraft Recommendation是一个面向推荐系统的轻量级引擎.遵循Apache 2.0协议。JStarCraft Recommendation引擎基于JStarCraft AI框架重构了所有LibRec引擎的推荐算法。
-
-机器学习算法底层均使用 Nd4j 实现。代码可以参考迁移到使用 dl4j 框架的代码中。
-
-|作者|洪钊桦|
-|---|---
-|E-mail|110399057@qq.com, jstarcraft@gmail.com
 
 ## 整合DL4J训练模型与Web工程
 参考资料：
