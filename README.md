@@ -134,24 +134,6 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
  3. DL4J中的循环网络：https://deeplearning4j.org/cn/usingrnns
  4. [DeepLearning4j: LSTM Network Example](https://deeplearning4j.org/programmingguide/05_lstm)
  
-****
-
-## JStarCraft,一个涵盖核心编程,人工智能,推荐与搜索领域的轻量级框架
-
-群友 [@HongZhaoHua](https://github.com/HongZhaoHua) 实现
-
-1. JStarCraft Core：提供了缓存，ORM，编解码，资源管理，脚本，监控，通讯，事务8个方面的核心特性，是整个框架的核心。
-[https://github.com/HongZhaoHua/jstarcraft-core](https://github.com/HongZhaoHua/jstarcraft-core)
-2. JStarCraft AI：包含了多种矩阵和向量计算的实现，支持硬件加速和并行计算，是目前最快最全的Java矩阵/向量计算库。 
-[https://github.com/HongZhaoHua/jstarcraft-ai](https://github.com/HongZhaoHua/jstarcraft-ai)
-3. JStarCraft RNS：包含了70多种排序预测与评分预测算法，支持多种脚本语言，是覆盖范围最全的Java推荐与搜索引擎。
-[https://github.com/HongZhaoHua/jstarcraft-rns](https://github.com/HongZhaoHua/jstarcraft-rns)
-4. JStarCraft Example：一个基于JStarCraft RNS引擎,Spring Boot框架和MovieLens 100K数据集搭建的电影演示项目，包括个性化推荐与个性化搜索两个部分。系统会根据用户的行为记录，自动调整用户的推荐内容和搜索内容。[https://github.com/HongZhaoHua/jstarcraft-example](https://github.com/HongZhaoHua/jstarcraft-example)
-
-| 作者 | 洪钊桦 |
-| --- | --- |
-| E-mail | 110399057@qq.com, jstarcraft@gmail.com |
-
 
 ## ObjectDetection 目标检测
 
@@ -170,6 +152,25 @@ mvn dependency:copy-dependencies -DoutputDirectory=target/lib
 
 参考资料：
  1. https://blog.csdn.net/u011669700/article/details/80025161
+ 
+ ****
+
+## JStarCraft,一个涵盖核心编程,人工智能,推荐与搜索领域的轻量级框架
+
+群友 [@HongZhaoHua](https://github.com/HongZhaoHua) 实现
+
+1. JStarCraft Core：提供了缓存，ORM，编解码，资源管理，脚本，监控，通讯，事务8个方面的核心特性，是整个框架的核心。
+[https://github.com/HongZhaoHua/jstarcraft-core](https://github.com/HongZhaoHua/jstarcraft-core)
+2. JStarCraft AI：包含了多种矩阵和向量计算的实现，支持硬件加速和并行计算，是目前最快最全的Java矩阵/向量计算库。 
+[https://github.com/HongZhaoHua/jstarcraft-ai](https://github.com/HongZhaoHua/jstarcraft-ai)
+3. JStarCraft RNS：包含了70多种排序预测与评分预测算法，支持多种脚本语言，是覆盖范围最全的Java推荐与搜索引擎。
+[https://github.com/HongZhaoHua/jstarcraft-rns](https://github.com/HongZhaoHua/jstarcraft-rns)
+4. JStarCraft Example：一个基于JStarCraft RNS引擎,Spring Boot框架和MovieLens 100K数据集搭建的电影演示项目，包括个性化推荐与个性化搜索两个部分。系统会根据用户的行为记录，自动调整用户的推荐内容和搜索内容。[https://github.com/HongZhaoHua/jstarcraft-example](https://github.com/HongZhaoHua/jstarcraft-example)
+
+| 作者 | 洪钊桦 |
+| --- | --- |
+| E-mail | 110399057@qq.com, jstarcraft@gmail.com |
+
 
  ## baidudianshi 百度点石比赛 baseline demo
 
