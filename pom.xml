@@ -35,7 +35,7 @@
         <scala.binary.version>2.11</scala.binary.version>
 
         <guava.version>19.0</guava.version>
-        <logback.version>1.1.7</logback.version>
+        <logback.version>1.2.0</logback.version>
         <jfreechart.version>1.0.13</jfreechart.version>
         <jcommon.version>1.0.23</jcommon.version>
         <maven-shade-plugin.version>2.4.3</maven-shade-plugin.version>
